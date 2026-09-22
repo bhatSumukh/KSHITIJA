@@ -2,7 +2,9 @@
 
 // Replace this with your actual image import
 // Example:
-// import kshitijaAbout from "../assets/kshitija-about.png";
+import kshitijaAbout from "../assets/kshitija-about.png";
+import ppcAbout from "../assets/about-ppc.png"
+import nssAbout from "../assets/about-nss.png"
 
 const About = () => {
   return (
@@ -64,7 +66,7 @@ const About = () => {
       IMAGE
   ========================== */}
   <img
-    src="/src/assets/about-kshitija.png"
+    src={kshitijaAbout}
     alt="Kshithija"
     className="
       absolute inset-0
@@ -283,7 +285,7 @@ const About = () => {
       IMAGE
   ========================== */}
   <img
-    src="src/assets/about-ppc.png"
+    src={ppcAbout}
     alt="Poornaprajna College"
     className="
       absolute inset-0
@@ -618,7 +620,7 @@ const About = () => {
       IMAGE
   ========================== */}
   <img
-    src="/src/assets/about-nss.png"
+    src={nssAbout}
     alt="National Service Scheme"
     className="
       absolute inset-0
