@@ -1,6 +1,14 @@
 // import React from "react";
 
 import { Link } from "react-router-dom";
+import bestwest from "../assets/bestwest.png";
+import escaperoom from "../assets/escaperoom.png";
+import dance from "../assets/dance.png";
+import debate from "../assets/debate.png";
+import facepainting from "../assets/facepainting.png";
+import reelmaking from "../assets/reelmaking.png";
+import singing from "../assets/singing.png";
+import streetplay from "../assets/streetplay.png";
 // import 
 
 const events = [
@@ -12,7 +20,7 @@ const events = [
     description:
       "A fast-paced quiz that challenges your knowledge, presence of mind, and ability to think under pressure.",
     teamSize: "7-10 Members",
-    image: "/src/assets/streetplay.png",
+    image: streetplay,
   },
 
   {
@@ -23,7 +31,7 @@ const events = [
     description:
       "A battle of ideas where participants put their arguments, communication, and wit to the test.",
     teamSize: "7-10 Members",
-    image: "/src/assets/dance.png",
+    image: dance,
   },
 
   {
@@ -34,7 +42,7 @@ const events = [
     description:
       "Think quickly, speak confidently, and express your thoughts when the topic is revealed.",
     teamSize: "4-6 Members",
-    image: "/src/assets/singing.png",
+    image: singing,
   },
 
   {
@@ -45,7 +53,7 @@ const events = [
     description:
       "Turn an idea into a compelling pitch and convince your audience that your product deserves the spotlight.",
     teamSize: "2 Members",
-    image: "/src/assets/facepainting.png",
+    image: facepainting,
   },
 
 {
@@ -56,7 +64,7 @@ const events = [
   description:
     "Turn discarded materials into something creative, meaningful, and visually striking.",
   teamSize: "2 Members",
-  image: "/src/assets/bestwest.png",
+  image: bestwest,
 },
 
   {
@@ -67,7 +75,7 @@ const events = [
     description:
       "Turn an idea into a compelling pitch and convince your audience that your product deserves the spotlight.",
     teamSize: "2-3 Members",
-    image: "/src/assets/escaperoom.png",
+    image: escaperoom,
   },
 
   {
@@ -78,7 +86,7 @@ const events = [
     description:
       "Turn an idea into a compelling pitch and convince your audience that your product deserves the spotlight.",
     teamSize: "2 Members",
-    image: "/src/assets/debate.png",
+    image: debate,
   },
 
   {
@@ -89,7 +97,7 @@ const events = [
     description:
       "Turn an idea into a compelling pitch and convince your audience that your product deserves the spotlight.",
     teamSize: "1 Member",
-    image: "/src/assets/reelmaking.png",
+    image: reelmaking,
   },
 ];
 
