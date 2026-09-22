@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 // import { Link } from "react-router-dom";
 import nsslogo from "../assets/nsslogo.png";
 import herobg from "../assets/hero-bg.png";
-import ppclogo from "../assets/ppclogo.png"
+import ppclogo from "../assets/ppc-logo2.png"
+import kshitijaLogo from "../assets/kshitijaK.png"
 function Home() {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -73,7 +74,7 @@ function Home() {
             <img
               src={ppclogo}
               alt="Poornaprajna college udupi"
-              className="h-10 w-10 object-contain"
+              className="h-13 w-13 object-contain"
             />
 
             <div className="hidden leading-tight sm:block">
@@ -222,11 +223,11 @@ function Home() {
           </p>
 
           {/* LOGO PLACEHOLDER */}
-          <div className="flex min-h-[150px] items-center justify-center sm:min-h-[190px] lg:min-h-[220px]">
+          <div className="flex min-h-[100px] items-center justify-center sm:min-h-[190px] lg:min-h-[100px]">
             <img
-              src="/images/kshitija-logo.png"
+              src={kshitijaLogo}
               alt="Kshithija"
-              className="w-[280px] object-contain drop-shadow-[0_0_30px_rgba(255,200,80,0.35)] sm:w-[430px] lg:w-[600px]"
+              className="w-[230px] object-contain drop-shadow-[0_0_30px_rgba(255,200,80,0.35)] sm:w-[430px] lg:w-[400px]"
             />
           </div>
 
@@ -245,7 +246,7 @@ function Home() {
           </div>
 
           {/* YUGMAM */}
-          <h2 className="mt-5 font-serif text-3xl tracking-[0.3em] text-white sm:text-4xl md:text-5xl">
+          <h2 className="mt-3 font-serif text-2xl tracking-[0.3em] text-white sm:text-3xl md:text-4xl">
             YUGMAM
           </h2>
 

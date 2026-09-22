@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const coordinators = [
   {
@@ -161,7 +161,7 @@ function Contact() {
       </section>
 
       {/* QUICK HELP */}
-      <section className="border-y border-white/5 bg-[#050f1a] px-6 py-20 sm:px-10">
+      {/* <section className="border-y border-white/5 bg-[#050f1a] px-6 py-20 sm:px-10">
         <div className="mx-auto max-w-4xl text-center">
           <p className="text-[10px] uppercase tracking-[0.4em] text-[#e7b65a]">
             NEED HELP?
@@ -193,7 +193,7 @@ function Contact() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FOOTER */}
       <footer className="px-6 py-10 text-center">
