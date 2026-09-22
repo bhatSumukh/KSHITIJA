@@ -15,6 +15,14 @@ const app = express();
 connectDB();
 
 app.use(cors());
+app.use((req, res, next) => {
+  console.log("REQUEST:", req.method, req.url);
+  next();
+});
+
+app.get("/health", (req, res) => {
+  res.json({ status: "ok" });
+});
 app.use(express.json());
 app.use("/api/colleges", collegeRoutes);
 app.use("/api/events", eventRoutes);
