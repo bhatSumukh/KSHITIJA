@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import nsslogo from "../assets/nsslogo.png";
 import herobg from "../assets/hero-bg.png";
 import ppclogo from "../assets/ppc-logo2.png"
-import kshitijaLogo from "../assets/kshitijaaFF.webp"
+import kshitijaLogo from "../assets/kshitijaaa finall2.png"
 function Home() {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
