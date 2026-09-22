@@ -2,7 +2,7 @@
 
 // Replace this with your actual image import
 // Example:
-import kshitijaAbout from "../assets/kshitija-about.png";
+import kshitijaAbout from "../assets/about-kshitija.png";
 import ppcAbout from "../assets/about-ppc.png"
 import nssAbout from "../assets/about-nss.png"
 
