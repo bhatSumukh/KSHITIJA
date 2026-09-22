@@ -3,19 +3,32 @@ const event = {
   type: "DEBATE",
 
   description:
-    "A powerful street theatre experience where stories, emotions, and social ideas come alive through performance.",
+    "Challenge ideas, defend your perspective, and engage in a battle of words and reasoning.",
 
   guidelines: [
- "Time limit: 4–6 minutes",
-"Participants: 4–6 members",
-"Background music is allowed, but only instrumental music can be used; it should not be in written format.",
-"No extra time will be given; the performance should be completed ","within 4–6 minutes, including the instrumental portion."
+    "2 participants — 1 Lawyer & 1 Witness.",
+
+    " Limited preparation time will be provided.",
+
+    " Maximum 5 minutes — Lawyer: 3 minutes | Witness: 2 minutes.",
+
+    "Must respond according to the given case and character.",
+
+    "Opposing Lawyer may ask relevant questions to the Witness.",
+
+    "Participants must answer questions on the spot; memorised responses alone are not sufficient.",
+
+    "No personal attacks, offensive language, interruptions, or disrespectful behaviour.",
+
+    "Judges' decision on scoring and conduct will be final.",
+
+    "Organisers may modify the rules when necessary and will inform participants accordingly."
   ],
 
   timing: {
-    reporting: "9:00 AM",
-    event: "10:00 AM – 12:00 PM",
-    duration: "10 – 15 minutes",
+    // reporting: "9:00 AM",
+    event: "10.30AM",
+    // duration: "10 – 15 minutes",
   },
 
   studentCoordinator1: {
@@ -86,51 +99,12 @@ function Debate() {
             </div>
           </div>
 
-          {/* TIMING */}
+             {/* TIMING */}
           <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-7 sm:p-10">
-            <div className="mb-8 flex items-center gap-4">
-              <span className="text-sm text-[#e7b65a]">02</span>
+            <div className="">
 
-              <h2 className="font-serif text-3xl text-white">Timing</h2>
-            </div>
-
-            <div className="space-y-6">
-              <div>
-                <p className="text-xs uppercase tracking-[0.2em] text-white/40">
-                  Reporting Time
-                </p>
-
-                <p className="mt-2 text-lg text-[#f2c873]">
-                  {event.timing.reporting}
-                </p>
-              </div>
-
-              <div>
-                <p className="text-xs uppercase tracking-[0.2em] text-white/40">
-                  Event Time
-                </p>
-
-                <p className="mt-2 text-lg text-[#f2c873]">
-                  {event.timing.event}
-                </p>
-              </div>
-
-              <div>
-                <p className="text-xs uppercase tracking-[0.2em] text-white/40">
-                  Performance Duration
-                </p>
-
-                <p className="mt-2 text-lg text-[#f2c873]">
-                  {event.timing.duration}
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* STUDENT COORDINATOR */}
-          <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-7 sm:p-10">
-            <div className="mb-8 flex items-center gap-4">
-              <span className="text-sm text-[#e7b65a]">03</span>
+              <div className="mb-8 flex items-center gap-4">
+              {/* <span className="text-sm text-[#e7b65a]">03</span> */}
 
               <h2 className="font-serif text-3xl text-white">
                 Student Coordinator
@@ -154,23 +128,19 @@ function Debate() {
             </p>
           </div>
 
-          {/* STAFF COORDINATOR */}
-          {/* <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-7 sm:p-10">
-            <div className="mb-8 flex items-center gap-4">
-              <span className="text-sm text-[#e7b65a]">04</span>
+              <div>
+                <p className="text-xl text-white">
+                  Event Time
+                </p>
 
-              <h2 className="font-serif text-3xl text-white">
-                Staff Coordinator
-              </h2>
+                <p className="mt-2 text-lg text-[#f2c873]">
+                  {event.timing.event}
+                </p>
+              </div>
+
             </div>
+          </div>
 
-            <p className="text-xl text-white">{event.staffCoordinator.name}</p>
-
-            <p className="mt-3 text-sm text-white/50">
-              {event.staffCoordinator.phone}
-            </p>
-          </div> */}
-        </div>
       </div>
     </section>
   );

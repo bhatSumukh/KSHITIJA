@@ -16,8 +16,8 @@ const events = [
   },
 
   {
-    name: "ANAGATA SWARA",
-    slug: "anagata swara",
+    name: "BHAVATARANGA",
+    slug: "bhavataranga",
     minTeamSize: 4,
     teamSize: 6,
     teamSizeFinalized: true,
@@ -40,8 +40,8 @@ const events = [
   },
 
   {
-    name: "KALAKUTA",
-    slug: "kalakuta",
+    name: "RAHASYADVĀRAM",
+    slug: "rahasyadvaram",
     minTeamSize: 2,
     teamSize: 3,
     teamSizeFinalized: true,

@@ -3,22 +3,28 @@ const event = {
   type: "DANCE",
 
   description:
-    "A powerful street theatre experience where stories, emotions, and social ideas come alive through performance.",
+    "Express the unity of tradition and modernity through rhythm, movement, and choreography.",
 
   guidelines: [
-"Participants: 7–10 members",
-"Duration: 8 + 2 minutes",
-"The song must be submitted in a pen drive.",
-"The song should be submitted between 6-10-2026 and 7-10-2026.",
-"The dressing/costume should be appropriate and decent.",
-"Vulgarity is not allowed.",
-"The dance should be decent and appropriate."
+    "Each team should consist of minimum of 7 members and maximum of 10 members",
+
+    "Use of fire, water or any hazardous materials is strictly prohibited",
+
+    "Any form of vulgarity, explicit content or gestures will lead to disqualification",
+
+    "Music should be submitted a day prior",
+
+    "Any use of language is permitted, MC should be done in kannada",
+
+    "Vulgarity is not allowed.",
+
+    "The dance should be decent and appropriate.",
   ],
 
   timing: {
-    reporting: "9:00 AM",
-    event: "10:00 AM – 12:00 PM",
-    duration: "10 – 15 minutes",
+    // reporting: "9:00 AM",
+    event: "1:45PM",
+    // duration: "10 – 15 minutes",
   },
 
   studentCoordinator1: {
@@ -27,7 +33,7 @@ const event = {
   },
   studentCoordinator2: {
     name: "Savi",
- phone: "+91 8971766204",
+    phone: "+91 8971766204",
   },
   staffCoordinator: {
     name: "Staff Coordinator Name",
@@ -89,51 +95,12 @@ function Dance() {
             </div>
           </div>
 
-          {/* TIMING */}
+             {/* TIMING */}
           <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-7 sm:p-10">
-            <div className="mb-8 flex items-center gap-4">
-              <span className="text-sm text-[#e7b65a]">02</span>
+            <div className="">
 
-              <h2 className="font-serif text-3xl text-white">Timing</h2>
-            </div>
-
-            <div className="space-y-6">
-              <div>
-                <p className="text-xs uppercase tracking-[0.2em] text-white/40">
-                  Reporting Time
-                </p>
-
-                <p className="mt-2 text-lg text-[#f2c873]">
-                  {event.timing.reporting}
-                </p>
-              </div>
-
-              <div>
-                <p className="text-xs uppercase tracking-[0.2em] text-white/40">
-                  Event Time
-                </p>
-
-                <p className="mt-2 text-lg text-[#f2c873]">
-                  {event.timing.event}
-                </p>
-              </div>
-
-              <div>
-                <p className="text-xs uppercase tracking-[0.2em] text-white/40">
-                  Performance Duration
-                </p>
-
-                <p className="mt-2 text-lg text-[#f2c873]">
-                  {event.timing.duration}
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* STUDENT COORDINATOR */}
-          <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-7 sm:p-10">
-            <div className="mb-8 flex items-center gap-4">
-              <span className="text-sm text-[#e7b65a]">03</span>
+              <div className="mb-8 flex items-center gap-4">
+              {/* <span className="text-sm text-[#e7b65a]">03</span> */}
 
               <h2 className="font-serif text-3xl text-white">
                 Student Coordinator
@@ -157,23 +124,19 @@ function Dance() {
             </p>
           </div>
 
-          {/* STAFF COORDINATOR */}
-          <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-7 sm:p-10">
-            <div className="mb-8 flex items-center gap-4">
-              <span className="text-sm text-[#e7b65a]">04</span>
+              <div>
+                <p className="text-xl text-white">
+                  Event Time
+                </p>
 
-              <h2 className="font-serif text-3xl text-white">
-                Staff Coordinator
-              </h2>
+                <p className="mt-2 text-lg text-[#f2c873]">
+                  {event.timing.event}
+                </p>
+              </div>
+
             </div>
-
-            <p className="text-xl text-white">{event.staffCoordinator.name}</p>
-
-            <p className="mt-3 text-sm text-white/50">
-              {event.staffCoordinator.phone}
-            </p>
           </div>
-        </div>
+
       </div>
     </section>
   );

@@ -95,7 +95,7 @@ function Guidelines() {
           ================================================= */}
 
           <GuidelineSection
-            number="01"
+            // number="01"
             title="General Guidelines"
           >
 
@@ -131,7 +131,7 @@ function Guidelines() {
           ================================================= */}
 
           <GuidelineSection
-            number="02"
+            // number="02"
             title="Registration Guidelines"
           >
 
@@ -175,7 +175,7 @@ function Guidelines() {
           ================================================= */}
 
           <GuidelineSection
-            number="03"
+            // number="03"
             title="Participant Guidelines"
           >
 
@@ -211,7 +211,7 @@ function Guidelines() {
           ================================================= */}
 
           <GuidelineSection
-            number="04"
+            // number="04"
             title="Event Guidelines"
           >
 
@@ -246,7 +246,7 @@ function Guidelines() {
           ================================================= */}
 
           <GuidelineSection
-            number="05"
+            // number="05"
             title="Reporting & Timing"
           >
 
@@ -276,7 +276,7 @@ function Guidelines() {
           ================================================= */}
 
           <GuidelineSection
-            number="06"
+            // number="06"
             title="Discipline & Conduct"
           >
 
@@ -311,8 +311,8 @@ function Guidelines() {
           ================================================= */}
 
           <GuidelineSection
-            number="07"
-            title="Safety & Responsibility"
+            // number="07" 
+            title="Safety &Responsibility"
           >
 
             <GuidelineItem>
@@ -335,7 +335,7 @@ function Guidelines() {
 
 
           <GuidelineSection
-            number="09"
+            // number="09"
             title="Important Notes"
           >
 

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 // import { Link } from "react-router-dom";
 import nsslogo from "../assets/nsslogo.png";
 import herobg from "../assets/hero-bg.png";
-
+import ppclogo from "../assets/ppclogo.png"
 function Home() {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -68,14 +68,19 @@ function Home() {
             <img
               src={nsslogo}
               alt="NSS Poornaprajna College"
-              className="h-14 w-14 object-contain"
+              className="h-10 w-10 object-contain"
+            />
+            <img
+              src={ppclogo}
+              alt="Poornaprajna college udupi"
+              className="h-10 w-10 object-contain"
             />
 
             <div className="hidden leading-tight sm:block">
               <p className="font-serif text-xl tracking-wide text-white">NSS</p>
 
               <p className="text-[11px] uppercase tracking-[0.15em] text-white/80">
-                POORNAPRAJNA COLLEGE
+                POORNAPRAJNA COLLEGE AUTONOMOUS
               </p>
 
               <p className="text-[10px] uppercase tracking-[0.18em] text-white/60">
@@ -261,7 +266,7 @@ function Home() {
             <div className="flex items-center gap-2">
               <span className="text-base text-[#f5c451]">◉</span>
 
-              <span>POORNAPRAJNA COLLEGE, UDUPI</span>
+              <span>POORNAPRAJNA COLLEGE AUTONOMOUS, UDUPI</span>
             </div>
           </div>
 

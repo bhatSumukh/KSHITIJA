@@ -616,7 +616,7 @@ function Registration() {
           <div className="border border-white/10 bg-[#071522] p-7 sm:p-10">
             <div>
               <p className="text-[9px] uppercase tracking-[0.4em] text-[#e7b65a]">
-                01 • COLLEGE DETAILS
+                COLLEGE DETAILS
               </p>
 
               <h2 className="mt-3 font-serif text-3xl text-white">
@@ -718,7 +718,7 @@ function Registration() {
             <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
               <div>
                 <p className="text-[9px] uppercase tracking-[0.4em] text-[#e7b65a]">
-                  02 • EVENTS
+                  EVENTS
                 </p>
 
                 <h2 className="mt-3 font-serif text-3xl text-white">

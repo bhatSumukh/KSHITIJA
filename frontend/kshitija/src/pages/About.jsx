@@ -136,9 +136,6 @@ const About = () => {
       {/* Number */}
       <div className="mb-5 flex items-center gap-4 sm:mb-6">
 
-        <span className="text-xs tracking-[0.2em] text-[#e7b65a] sm:text-sm">
-          01
-        </span>
 
         <span className="h-px w-12 bg-[#e7b65a]/70 sm:w-16" />
 
@@ -366,9 +363,6 @@ const About = () => {
       ========================== */}
       <div className="mb-5 flex items-center gap-4 sm:mb-6">
 
-        <span className="text-xs tracking-[0.2em] text-[#e7b65a] sm:text-sm">
-          02
-        </span>
 
         <span className="h-px w-12 bg-[#e7b65a]/70 sm:w-16" />
 
@@ -700,9 +694,6 @@ const About = () => {
       ========================== */}
       <div className="mb-5 flex items-center gap-4 sm:mb-6">
 
-        <span className="text-xs tracking-[0.2em] text-[#e7b65a] sm:text-sm">
-          03
-        </span>
 
         <span className="h-px w-12 bg-[#e7b65a]/70 sm:w-16" />
 
@@ -871,7 +862,7 @@ const About = () => {
       <div className="mt-7 sm:mt-8">
 
         <a
-          href="https://nss.gov.in/"
+          href="https://www.ppc.ac.in/nss"
           target="_blank"
           rel="noopener noreferrer"
           className="

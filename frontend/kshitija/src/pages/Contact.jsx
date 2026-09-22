@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const coordinators = [
   {
     role: "Student Coordinator",
-    name: "Shritesh Shetty",
+    name: "Shrithesh Shetty",
     phone: "+91 8591132441",
     email: "student@example.com",
   },
@@ -20,8 +20,8 @@ const coordinators = [
     email: "student@example.com",
   },
     {
-    role: "Manvith",
-    name: "Student Coordinator Name",
+    role: "Student Coordinator",
+    name: "Manvith",
     phone: "+91 9481837253",
     email: "student@example.com",
   },

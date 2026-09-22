@@ -1,23 +1,36 @@
 const event = {
-  name: "KALAKUTA",
+  name: "RAHASYADVĀRAM",
   type: "ESCAPE ROOM",
 
   description:
-    "A powerful street theatre experience where stories, emotions, and social ideas come alive through performance.",
+    "Solve clues, crack puzzles, and work together to escape before time runs out.",
 
   guidelines: [
-    "The performance must be suitable for a public audience.",
-    "Teams must report to the venue before the allotted reporting time.",
-    "Participants must bring their own required props and costumes.",
-    "The performance must remain within the allotted time.",
-    "Use of offensive or inappropriate content is not permitted.",
-    "The decision of the judges will be final.",
+    "Each team must have 2 participants.",
+
+    "Participants must follow the instructions given by the coordinators.",
+
+    "Mobile phones and electronic devices are not allowed unless permitted.",
+
+    "Teams must complete each round within the given time limit.",
+
+    "Clues must not be damaged, hidden, exchanged or taken by other teams",
+
+    "Participants must not enter restricted areas.",
+
+    "No pushing, running or unsafe behaviour is allowed.",
+
+    "Hints may be provided with a time/point penalty.",
+
+    "Damaging equipment or cheating may lead to disqualification.",
+
+    "The decision of the event coordinators will be final."
   ],
 
   timing: {
-    reporting: "9:00 AM",
-    event: "10:00 AM – 12:00 PM",
-    duration: "10 – 15 minutes",
+    // reporting: "9:00 AM",
+    event: "10:30AM",
+    // duration: "10 – 15 minutes",
   },
 
   studentCoordinator1: {
@@ -88,51 +101,12 @@ function EscapeRoom() {
             </div>
           </div>
 
-          {/* TIMING */}
+                {/* TIMING */}
           <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-7 sm:p-10">
-            <div className="mb-8 flex items-center gap-4">
-              <span className="text-sm text-[#e7b65a]">02</span>
+            <div className="">
 
-              <h2 className="font-serif text-3xl text-white">Timing</h2>
-            </div>
-
-            <div className="space-y-6">
-              <div>
-                <p className="text-xs uppercase tracking-[0.2em] text-white/40">
-                  Reporting Time
-                </p>
-
-                <p className="mt-2 text-lg text-[#f2c873]">
-                  {event.timing.reporting}
-                </p>
-              </div>
-
-              <div>
-                <p className="text-xs uppercase tracking-[0.2em] text-white/40">
-                  Event Time
-                </p>
-
-                <p className="mt-2 text-lg text-[#f2c873]">
-                  {event.timing.event}
-                </p>
-              </div>
-
-              <div>
-                <p className="text-xs uppercase tracking-[0.2em] text-white/40">
-                  Performance Duration
-                </p>
-
-                <p className="mt-2 text-lg text-[#f2c873]">
-                  {event.timing.duration}
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* STUDENT COORDINATOR */}
-          <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-7 sm:p-10">
-            <div className="mb-8 flex items-center gap-4">
-              <span className="text-sm text-[#e7b65a]">03</span>
+              <div className="mb-8 flex items-center gap-4">
+              {/* <span className="text-sm text-[#e7b65a]">03</span> */}
 
               <h2 className="font-serif text-3xl text-white">
                 Student Coordinator
@@ -156,23 +130,19 @@ function EscapeRoom() {
             </p>
           </div>
 
-          {/* STAFF COORDINATOR */}
-          {/* <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-7 sm:p-10">
-            <div className="mb-8 flex items-center gap-4">
-              <span className="text-sm text-[#e7b65a]">04</span>
+              <div>
+                <p className="text-xl text-white">
+                  Event Time
+                </p>
 
-              <h2 className="font-serif text-3xl text-white">
-                Staff Coordinator
-              </h2>
+                <p className="mt-2 text-lg text-[#f2c873]">
+                  {event.timing.event}
+                </p>
+              </div>
+
             </div>
+          </div>
 
-            <p className="text-xl text-white">{event.staffCoordinator.name}</p>
-
-            <p className="mt-3 text-sm text-white/50">
-              {event.staffCoordinator.phone}
-            </p>
-          </div> */}
-        </div>
       </div>
     </section>
   );
