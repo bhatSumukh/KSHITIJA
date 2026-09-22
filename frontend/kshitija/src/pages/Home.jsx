@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import nsslogo from "../assets/nsslogo.png";
 import herobg from "../assets/hero-bg.png";
 import ppclogo from "../assets/ppc-logo2.png"
-import kshitijaLogo from "../assets/kshitijaaa webj.webp"
+import kshitijaLogo from "../assets/kshitijaaa final.webp"
 function Home() {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -227,7 +227,7 @@ function Home() {
             <img
               src={kshitijaLogo}
               alt="Kshithija"
-              className="w-[230px] object-contain drop-shadow-[0_0_30px_rgba(255,200,80,0.35)] sm:w-[430px] lg:w-[300px]"
+              className="w-[230px] object-contain drop-shadow-[0_0_30px_rgba(255,200,80,0.35)] sm:w-[430px] lg:w-[500px]"
             />
           </div>
 
