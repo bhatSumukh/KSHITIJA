@@ -223,11 +223,11 @@ function Home() {
           </p>
 
           {/* LOGO PLACEHOLDER */}
-          <div className="flex min-h-[100px] items-center justify-center sm:min-h-[190px] lg:min-h-[100px]">
+          <div className="flex min-h-[300px] items-center justify-center sm:min-h-[190px] lg:min-h-[100px]">
             <img
               src={kshitijaLogo}
               alt="Kshithija"
-              className="w-[230px] object-contain drop-shadow-[0_0_30px_rgba(255,200,80,0.35)] sm:w-[430px] lg:w-[500px]"
+              className="w-[260px] object-contain drop-shadow-[0_0_30px_rgba(255,200,80,0.35)] sm:w-[430px] lg:w-[600px]"
             />
           </div>
 
