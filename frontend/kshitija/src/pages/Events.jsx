@@ -18,7 +18,7 @@ const events = [
     slug: "yugantara",
     category:"STREET PLAY",
     description:
-      "A fast-paced quiz that challenges your knowledge, presence of mind, and ability to think under pressure.",
+      "Bring stories to life through powerful acting, social themes, and creative storytelling.",
     teamSize: "7-10 Members",
     image: streetplay,
   },
@@ -29,18 +29,18 @@ const events = [
     slug: "vasudhaiva nrityam",
     category: "DANCE",
     description:
-      "A battle of ideas where participants put their arguments, communication, and wit to the test.",
+      "Express the unity of tradition and modernity through rhythm, movement, and choreography.",
     teamSize: "7-10 Members",
     image: dance,
   },
 
   {
     id: 3,
-    name: "ANAGATA SWARA",
-    slug: "anagata swara",
+    name: "BHAVATARANGA",
+    slug: "bhavataranga",
     category: "SINGING",
     description:
-      "Think quickly, speak confidently, and express your thoughts when the topic is revealed.",
+      "Let your voice bridge generations with melodies that connect the past, present, and future.",
     teamSize: "4-6 Members",
     image: singing,
   },
@@ -51,7 +51,7 @@ const events = [
     slug: "antariksha",
     category: "FACE PAINTING",
     description:
-      "Turn an idea into a compelling pitch and convince your audience that your product deserves the spotlight.",
+      "Turn faces into canvases and create imaginative art inspired by your creativity.",
     teamSize: "2 Members",
     image: facepainting,
   },
@@ -62,18 +62,18 @@ const events = [
   slug: "rupantara",
   category: "BEST OUT OF WASTE",
   description:
-    "Turn discarded materials into something creative, meaningful, and visually striking.",
+    "Transform discarded materials into creative, meaningful, and visually striking art.Turn discarded materials into something creative, meaningful, and visually striking.",
   teamSize: "2 Members",
   image: bestwest,
 },
 
   {
     id: 6,
-    name: "KALAKUTA",
-    slug: "kalakuta",
+    name: "RAHASYADVĀRAM",
+    slug: "rahasyadvaram",
     category: "ESCAPE ROOM",
     description:
-      "Turn an idea into a compelling pitch and convince your audience that your product deserves the spotlight.",
+      "Solve clues, crack puzzles, and work together to escape before time runs out.",
     teamSize: "2-3 Members",
     image: escaperoom,
   },
@@ -84,7 +84,7 @@ const events = [
     slug: "janasabha",
     category: "DEBATE",
     description:
-      "Turn an idea into a compelling pitch and convince your audience that your product deserves the spotlight.",
+      "Challenge ideas, defend your perspective, and engage in a battle of words and reasoning.",
     teamSize: "2 Members",
     image: debate,
   },
@@ -95,7 +95,7 @@ const events = [
     slug: "kshanachitra",
     category: "REEL MAKING",
     description:
-      "Turn an idea into a compelling pitch and convince your audience that your product deserves the spotlight.",
+      "Capture the spirit of Yugmam through a short, creative, and visually engaging reel.",
     teamSize: "1 Member",
     image: reelmaking,
   },

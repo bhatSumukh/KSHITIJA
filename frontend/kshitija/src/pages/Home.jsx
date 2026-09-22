@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import nsslogo from "../assets/nsslogo.png";
 import herobg from "../assets/hero-bg.png";
 import ppclogo from "../assets/ppc-logo2.png"
-import kshitijaLogo from "../assets/kshitijaK.png"
+import kshitijaLogo from "../assets/kshitijaaa webj.webp"
 function Home() {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -227,12 +227,12 @@ function Home() {
             <img
               src={kshitijaLogo}
               alt="Kshithija"
-              className="w-[230px] object-contain drop-shadow-[0_0_30px_rgba(255,200,80,0.35)] sm:w-[430px] lg:w-[400px]"
+              className="w-[230px] object-contain drop-shadow-[0_0_30px_rgba(255,200,80,0.35)] sm:w-[430px] lg:w-[300px]"
             />
           </div>
 
           {/* COLLEGE FEST */}
-          <p className="-mt-2 text-xs uppercase tracking-[0.55em] text-white sm:text-sm">
+          <p className="mt-5 text-xs uppercase tracking-[0.55em] text-white sm:text-sm">
             THE COLLEGE FEST
           </p>
 
@@ -255,7 +255,7 @@ function Home() {
           </p>
 
           {/* DATE + LOCATION */}
-          <div className="mt-8 flex flex-col items-center gap-3 text-xs text-white/90 sm:flex-row sm:gap-6 sm:text-sm">
+          <div className="mt-4 flex flex-col items-center gap-3 text-xs text-white/90 sm:flex-row sm:gap-6 sm:text-sm">
             <div className="flex items-center gap-2">
               <span className="text-base text-[#f5c451]">◫</span>
 
