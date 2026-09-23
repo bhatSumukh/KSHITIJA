@@ -20,15 +20,15 @@ function Main() {
         <Events />
       </section>
 
-      <section id="registration">
-        <Registration />
-      </section>
-
       <section id="guidelines">
         <Guidelines />
       </section>
 
-            <section id="contact">
+      <section id="registration">
+        <Registration />
+      </section>
+
+      <section id="contact">
         <Contact />
       </section>
     </main>
