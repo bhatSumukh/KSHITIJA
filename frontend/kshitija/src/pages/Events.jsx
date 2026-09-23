@@ -191,6 +191,7 @@ const Events = () => {
                 <div className="absolute bottom-6 left-5 right-5">
                   <h2 className="font-serif text-2xl tracking-wide text-[#f2c873]">
                     {event.name}
+                     <span className="ml-2 text-sm text-gray-400">— {event.type}</span>
                   </h2>
                 </div>
               </div>

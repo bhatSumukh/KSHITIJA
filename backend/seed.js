@@ -16,6 +16,7 @@ const seedEvents = async () => {
         {
           $set: {
             name: event.name,
+            type: event.type,
             minTeamSize: event.minTeamSize,
             teamSize: event.teamSize,
             teamSizeFinalized: event.teamSizeFinalized,

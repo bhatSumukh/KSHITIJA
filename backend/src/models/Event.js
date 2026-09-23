@@ -16,6 +16,11 @@ const eventSchema = new mongoose.Schema(
       trim: true,
     },
 
+    type: {
+      type: String,
+      trim: true,
+    },
+
     minTeamSize: {
       type: Number,
       min: 1,
@@ -43,7 +48,7 @@ const eventSchema = new mongoose.Schema(
       default: true,
     },
   },
-  { timestamps: true }
+  { timestamps: true },
 );
 
 const Event = mongoose.model("Event", eventSchema);
