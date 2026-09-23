@@ -62,7 +62,7 @@ const events = [
   slug: "rupantara",
   category: "BEST OUT OF WASTE",
   description:
-    "Transform discarded materials into creative, meaningful, and visually striking art.Turn discarded materials into something creative, meaningful, and visually striking.",
+    "Transform discarded materials into creative, meaningful, and visually striking art.",
   teamSize: "2 Members",
   image: bestwest,
 },
