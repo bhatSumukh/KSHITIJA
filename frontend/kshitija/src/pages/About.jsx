@@ -730,7 +730,6 @@ const About = () => {
               <p
                 className="
             mt-4
-            hidden
             text-base
             leading-7
             text-white
