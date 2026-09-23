@@ -252,7 +252,7 @@ function Home() {
           </h2>
 
           <p className="mt-2 text-[10px] uppercase tracking-[0.38em] text-white/85 sm:text-xs">
-            WHERE TWO WORLDS UNITE
+            WHERE TRADITION MEETS TOMORROW
           </p>
 
           {/* DATE + LOCATION */}

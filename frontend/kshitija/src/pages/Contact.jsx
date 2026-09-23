@@ -202,7 +202,7 @@ function Contact() {
         </p>
 
         <p className="mt-3 text-[9px] uppercase tracking-[0.25em] text-[#e7b65a]/40">
-          YUGMAM — WHERE TWO WORLDS UNITE
+          YUGMAM — WHERE TRADITION MEETS TOMORROW
         </p>
       </footer>
     </main>

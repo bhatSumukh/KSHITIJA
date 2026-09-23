@@ -49,7 +49,7 @@ const About = () => {
           </p>
 
           <p className="mt-8 text-xs tracking-[0.3em] text-[#e7b65a]">
-            YUGMAM — WHERE TWO WORLDS UNITE
+            YUGMAM — WHERE TRADITION MEETS TOMORROW
           </p>
         </div>
 

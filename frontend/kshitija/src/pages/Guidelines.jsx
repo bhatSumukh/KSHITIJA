@@ -43,7 +43,7 @@ function Guidelines() {
             </p>
 
             <p className="mt-4 text-xs uppercase tracking-[0.25em] text-[#e7b65a]/70">
-              YUGMAM — WHERE TWO WORLDS UNITE
+              YUGMAM — WHERE TRADITION MEETS TOMORROW
             </p>
 
           </div>
