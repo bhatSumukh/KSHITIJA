@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 // import { Link } from "react-router-dom";
 import nsslogo from "../assets/nsslogo.png";
 import herobg from "../assets/hero-bg.png";
-import ppclogo from "../assets/ppc-logo2.png"
-import kshitijaLogo from "../assets/kshi2.png"
+import ppclogo from "../assets/ppc-logo2.png";
+import kshitijaLogo from "../assets/kshi2.png";
 function Home() {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -216,23 +216,23 @@ function Home() {
         {/* =================================================
             CENTER CONTENT
         ================================================== */}
-        <div className="relative z-10 mx-auto flex w-full max-w-5xl flex-col items-center px-5 pt-24 text-center">
+        <div className="relative z-10 mx-auto flex w-full max-w-5xl flex-col justify-center items-center px-5 pt-24 text-center">
           {/* NSS PRESENTS */}
-          <p className="mb-4 text-[10px] uppercase tracking-[0.6em] text-white/80 sm:text-xs">
+          <p className="text-[20px] uppercase tracking-[0.6em] text-white/80 sm:text-xs">
             NSS PRESENTS
           </p>
 
           {/* LOGO PLACEHOLDER */}
-          <div className="flex min-h-[300px] items-center justify-center sm:min-h-[190px] lg:min-h-[100px]">
+          <div className="flex min-h-[300px] items-center justify-center sm:min-h-[100px] lg:min-h-[100px]">
             <img
               src={kshitijaLogo}
               alt="Kshithija"
-              className="w-[260px] object-contain drop-shadow-[0_0_30px_rgba(255,200,80,0.35)] sm:w-[430px] lg:w-[600px]"
+              className="w-[90vw] max-w-[500px] object-contain drop-shadow-[0_0_30px_rgba(255,200,80,0.35)] sm:w-[200px] lg:w-[600px]"
             />
           </div>
 
           {/* COLLEGE FEST */}
-          <p className="mt-5 text-xs uppercase tracking-[0.55em] text-white sm:text-sm">
+          <p className="text-xs uppercase tracking-[0.55em] text-white sm:text-sm">
             THE COLLEGE FEST
           </p>
 

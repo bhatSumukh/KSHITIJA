@@ -25,7 +25,7 @@ const event = {
 
   studentCoordinator1: {
     name: "Keerthan",
-    phone: "+91 ",
+    phone: "+91 7204814580",
   },
   studentCoordinator2: {
     name: "Akash",

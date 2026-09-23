@@ -25,10 +25,10 @@ function App() {
 
         <Route path="/events/yugantara" element={<StreetPlay />} />
         <Route path="/events/vasudhaiva nrityam" element={<Dance />} />
-        <Route path="/events/anagata swara" element={<Singing />} />
+        <Route path="/events/bhavataranga" element={<Singing />} />
         <Route path="/events/rupantara" element={<BestWaste />} />
         <Route path="/events/antariksha" element={<FacePainting />} />
-        <Route path="/events/kalakuta" element={<EscapeRoom />} />
+        <Route path="/events/rahasyadvaram" element={<EscapeRoom />} />
         <Route path="/events/janasabha" element={<Debate />} />
         <Route path="/events/kshanachitra" element={<Reels />} />
       </Routes>
