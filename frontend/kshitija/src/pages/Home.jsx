@@ -180,7 +180,7 @@ function Home() {
         />
 
         {/* DARK OVERLAY */}
-        <div className="absolute inset-0 bg-[#02101d]/30 backdrop-blur-sm" />
+        <div className="absolute inset-0 bg-[#02101d]/20" />
 
         {/* TOP GRADIENT */}
         <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-[#031426]/90 to-transparent" />
