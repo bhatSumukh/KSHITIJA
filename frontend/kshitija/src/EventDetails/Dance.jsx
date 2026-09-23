@@ -57,7 +57,7 @@ function Dance() {
         <h1 className="font-serif text-5xl text-[#f2c873] sm:text-6xl lg:text-7xl">
           {event.name}
             <span className="ml-2 text-sm text-gray-400">
-    — {event.category}
+    — {event.type}
   </span>
         </h1>
 
