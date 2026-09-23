@@ -4,6 +4,7 @@ import nsslogo from "../assets/nsslogo.png";
 import herobg from "../assets/hero-bg.png";
 import ppclogo from "../assets/ppc-logo2.png";
 import kshitijaLogo from "../assets/kshi2.png";
+import mobileHeroBg from "../assets/heromob.png";
 
 function Home() {
   const [timeLeft, setTimeLeft] = useState({
@@ -162,10 +163,19 @@ function Home() {
         className="relative flex min-h-screen items-center justify-center overflow-hidden"
       >
         {/* BACKGROUND IMAGE */}
+        {/* DESKTOP BACKGROUND */}
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          className="absolute inset-0 hidden bg-cover bg-center bg-no-repeat sm:block"
           style={{
             backgroundImage: `url(${herobg})`,
+          }}
+        />
+
+        {/* MOBILE BACKGROUND */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat sm:hidden"
+          style={{
+            backgroundImage: `url(${mobileHeroBg})`,
           }}
         />
 
