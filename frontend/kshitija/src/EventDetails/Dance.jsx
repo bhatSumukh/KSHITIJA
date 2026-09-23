@@ -1,5 +1,5 @@
 const event = {
-  name: "VASUDAIVA NRITYAM",
+  name: "NARIPARIVARTANAM",
   type: "DANCE",
 
   description:

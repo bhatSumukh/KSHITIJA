@@ -25,8 +25,8 @@ const events = [
 
   {
     id: 2,
-    name: "VASUDHAIVA NRITYAM",
-    slug: "vasudhaiva nrityam",
+    name: "NARIPARIVARTANAM",
+    slug: "nariparivartanam",
     category: "DANCE",
     description:
       "Express the unity of tradition and modernity through rhythm, movement, and choreography.",
