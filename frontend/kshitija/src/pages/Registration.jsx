@@ -790,7 +790,7 @@ function Registration() {
                                 isSelected ? "text-[#f2c873]" : "text-white"
                               }`}
                             >
-                              {event.name}
+                              {event.name} <br />
                               <span className="ml-2 text-sm text-gray-400">— {event.type}</span>
                             </h3>
 
