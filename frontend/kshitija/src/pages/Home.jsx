@@ -4,6 +4,7 @@ import nsslogo from "../assets/nsslogo.png";
 import herobg from "../assets/hero-bg.png";
 import ppclogo from "../assets/ppc-logo2.png";
 import kshitijaLogo from "../assets/kshi2.png";
+
 function Home() {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -223,17 +224,17 @@ function Home() {
           </p>
 
           {/* LOGO PLACEHOLDER */}
-          <div className="flex min-h-[300px] items-center justify-center sm:min-h-[100px] lg:min-h-[100px]">
+          <div className="flex min-h-[150px] items-center justify-center sm:min-h-[150px] lg:min-h-[100px]">
             <img
               src={kshitijaLogo}
               alt="Kshithija"
-              className="w-[90vw] max-w-[500px] object-contain drop-shadow-[0_0_30px_rgba(255,200,80,0.35)] sm:w-[200px] lg:w-[600px]"
+              className="w-[100vw] max-w-[500px] object-contain drop-shadow-[0_0_30px_rgba(255,200,80,0.35)] sm:w-[250px] lg:w-[600px]"
             />
           </div>
 
           {/* COLLEGE FEST */}
-          <p className="text-xs uppercase tracking-[0.55em] text-white sm:text-sm">
-            THE COLLEGE FEST
+          <p className="text-2 uppercase tracking-[0.55em] bg-gradient-to-r from-yellow-400 to-blue-400 bg-clip-text text-transparent sm:text-sm font-bold font-[poppins]">
+            STATE LEVEL <br></br>INTER-COLLEGIATE FEST
           </p>
 
           {/* DECORATIVE LINE */}
@@ -267,7 +268,7 @@ function Home() {
             <div className="flex items-center gap-2">
               <span className="text-base text-[#f5c451]">◉</span>
 
-              <span>POORNAPRAJNA COLLEGE AUTONOMOUS, UDUPI</span>
+              <span>POORNAPRAJNA COLLEGE (AUTONOMOUS), UDUPI</span>
             </div>
           </div>
 

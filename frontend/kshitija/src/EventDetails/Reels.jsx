@@ -52,6 +52,7 @@ function Reels() {
 
         <h1 className="font-serif text-5xl text-[#f2c873] sm:text-6xl lg:text-7xl">
           {event.name}
+          <span className="ml-2 text-sm text-gray-400">— {event.category}</span>
         </h1>
 
         <p className="mt-3 text-sm tracking-[0.35em] text-white/50">
@@ -91,48 +92,43 @@ function Reels() {
             </div>
           </div>
 
-             {/* TIMING */}
+          {/* TIMING */}
           <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-7 sm:p-10">
             <div className="">
-
               <div className="mb-8 flex items-center gap-4">
-              {/* <span className="text-sm text-[#e7b65a]">03</span> */}
+                {/* <span className="text-sm text-[#e7b65a]">03</span> */}
 
-              <h2 className="font-serif text-3xl text-white">
-                Student Coordinator
-              </h2>
-            </div>
-
-            <p className="text-xl text-white">
-              {event.studentCoordinator1.name}
-            </p>
-
-            <p className="mb-3 text-sm text-white/50">
-              {event.studentCoordinator1.phone}
-            </p>
-
-            <p className="text-xl text-white">
-              {event.studentCoordinator2.name}
-            </p>
-
-            <p className="mb-3 text-sm text-white/50">
-              {event.studentCoordinator2.phone}
-            </p>
-          </div>
-
-              <div>
-                <p className="text-xl text-white">
-                  Event Time
-                </p>
-
-                <p className="mt-2 text-lg text-[#f2c873]">
-                  {event.timing.event}
-                </p>
+                <h2 className="font-serif text-3xl text-white">
+                  Student Coordinator
+                </h2>
               </div>
 
+              <p className="text-xl text-white">
+                {event.studentCoordinator1.name}
+              </p>
+
+              <p className="mb-3 text-sm text-white/50">
+                {event.studentCoordinator1.phone}
+              </p>
+
+              <p className="text-xl text-white">
+                {event.studentCoordinator2.name}
+              </p>
+
+              <p className="mb-3 text-sm text-white/50">
+                {event.studentCoordinator2.phone}
+              </p>
+            </div>
+
+            <div>
+              <p className="text-xl text-white">Event Time</p>
+
+              <p className="mt-2 text-lg text-[#f2c873]">
+                {event.timing.event}
+              </p>
             </div>
           </div>
-
+        </div>
       </div>
     </section>
   );
