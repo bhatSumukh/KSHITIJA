@@ -60,7 +60,7 @@ function EscapeRoom() {
           <span className="h-px w-16 bg-[#e7b65a]/60" />
         </div>
 
-        <h1 className="font-serif text-5xl text-[#f2c873] sm:text-6xl lg:text-7xl">
+        <h1 className="font-serif text-4xl text-[#f2c873] sm:text-6xl lg:text-7xl">
           {event.name}
         </h1>
 
