@@ -791,6 +791,7 @@ function Registration() {
                               }`}
                             >
                               {event.name}
+                              <span className="ml-2 text-sm text-gray-400">— {event.type}</span>
                             </h3>
 
                             <p className="mt-1 text-[9px] uppercase tracking-[0.2em] text-white/30">
