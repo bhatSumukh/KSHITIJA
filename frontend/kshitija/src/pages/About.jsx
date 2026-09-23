@@ -182,8 +182,7 @@ const About = () => {
           max-w-md
           text-[13px]
           leading-6
-          text-white/65
-
+          text-white
           sm:mt-6
           sm:text-sm
           sm:leading-7
