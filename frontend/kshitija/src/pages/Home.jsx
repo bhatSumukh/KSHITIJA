@@ -180,7 +180,7 @@ function Home() {
         />
 
         {/* DARK OVERLAY */}
-        <div className="absolute inset-0 bg-[#808080]/5 backdrop-blur-3xl" />
+        <div className="absolute inset-0 bg-[#808080]/5" />
 
         {/* TOP GRADIENT */}
         <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-[#031426]/90 to-transparent" />
@@ -239,7 +239,7 @@ function Home() {
               <img
                 src={kshitijaLogo}
                 alt="kshitija"
-                className="w-auto max-w-[90vw] sm:max-w-[400px] lg:max-w-[600px] h-auto object-contain drop-shadow-[0_0_30px_rgba(255,200,80,0.35)]"
+                className="w-auto max-w-[90vw] sm:max-w-[200px] lg:max-w-[600px] h-auto object-contain drop-shadow-[0_0_30px_rgba(255,200,80,0.35)]"
               />
             </div>
           </div>
