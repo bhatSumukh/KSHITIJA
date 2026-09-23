@@ -2,6 +2,7 @@ const events = [
   {
     name: "YUGANTARA",
     slug: "yugantara",
+    type: "Street Play",
     minTeamSize: 7,
     teamSize: 10,
     teamSizeFinalized: true,
@@ -10,6 +11,7 @@ const events = [
   {
     name: "VASUDHAIVA NRITYAM",
     slug: "vasudhaiva nrityam",
+    type: "Dance",
     minTeamSize: 7,
     teamSize: 10,
     teamSizeFinalized: true,
@@ -18,14 +20,16 @@ const events = [
   {
     name: "BHAVATARANGA",
     slug: "bhavataranga",
+    type: "Singing",
     minTeamSize: 4,
     teamSize: 6,
     teamSizeFinalized: true,
   },
 
-    {
+  {
     name: "ANTARIKSHA",
     slug: "antariksha",
+    type: "Face Painting",
     minTeamSize: 2,
     teamSize: 2,
     teamSizeFinalized: true,
@@ -34,6 +38,7 @@ const events = [
   {
     name: "RUPANTARA",
     slug: "rupantara",
+    type: "Face Painting",
     minTeamSize: 2,
     teamSize: 2,
     teamSizeFinalized: true,
@@ -42,14 +47,16 @@ const events = [
   {
     name: "RAHASYADVĀRAM",
     slug: "rahasyadvaram",
+    type: "Escape Room",
     minTeamSize: 2,
-    teamSize: 3,
+    teamSize: 2,
     teamSizeFinalized: true,
   },
 
   {
     name: "JANASABHA",
     slug: "janasabha",
+    type: "Deabte",
     minTeamSize: 2,
     teamSize: 2,
     teamSizeFinalized: true,
@@ -58,6 +65,7 @@ const events = [
   {
     name: "KSHANACHITRA",
     slug: "kshanachitra",
+    type: "Reel Making",
     minTeamSize: 1,
     teamSize: 1,
     teamSizeFinalized: true,
