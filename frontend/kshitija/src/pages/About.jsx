@@ -178,14 +178,12 @@ const About = () => {
             {/* Description */}
             <p
               className="
-          mt-5
-          max-w-md
-          text-[13px]
-          leading-6
-          text-white
-          sm:mt-6
-          sm:text-sm
-          sm:leading-7
+           text-[13px]
+            leading-6
+            text-white
+            sm:text-base
+            sm:leading-7
+            text-base
         "
             >
               Kshitija, meaning Horizon, is a celebration of endless
@@ -728,12 +726,12 @@ const About = () => {
 
               <p
                 className="
-            mt-4
-            text-base
-            leading-7
+             text-[13px]
+            leading-6
             text-white
-
-            sm:block
+            sm:text-base
+            sm:leading-7
+            text-base
           "
               >
                 The national service scheme is an indian government sector
