@@ -234,12 +234,14 @@ function Home() {
           </p>
 
           {/* LOGO PLACEHOLDER */}
-          <div className="flex min-h-[150px] items-center justify-center sm:min-h-[150px] lg:min-h-[100px]">
-            <img
-              src={kshitijaLogo}
-              alt="Kshithija"
-              className="w-[100vw] max-w-[500px] object-contain drop-shadow-[0_0_30px_rgba(255,200,80,0.35)] sm:w-[250px] lg:w-[600px]"
-            />
+          <div className="w-full flex justify-center">
+            <div className="w-full flex items-center justify-center min-h-[150px] sm:min-h-[150px] lg:min-h-[100px]">
+              <img
+                src={kshitijaLogo}
+                alt="kshitija"
+                className="w-auto max-w-[90vw] sm:max-w-[400px] lg:max-w-[600px] h-auto object-contain drop-shadow-[0_0_30px_rgba(255,200,80,0.35)]"
+              />
+            </div>
           </div>
 
           {/* COLLEGE FEST */}
