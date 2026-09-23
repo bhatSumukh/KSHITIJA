@@ -74,7 +74,7 @@ const events = [
     category: "ESCAPE ROOM",
     description:
       "Solve clues, crack puzzles, and work together to escape before time runs out.",
-    teamSize: "2-3 Members",
+    teamSize: "2 Members",
     image: escaperoom,
   },
 
