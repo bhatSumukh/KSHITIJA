@@ -243,7 +243,7 @@ function Home() {
           </div>
 
           {/* COLLEGE FEST */}
-          <p className="text-2 uppercase tracking-[0.55em] bg-gradient-to-r from-yellow-400 to-blue-400 bg-clip-text text-transparent sm:text-sm font-bold font-[poppins]">
+          <p className="text-2 uppercase tracking-[0.55em] text-white  sm:text-sm font-bold font-[poppins]">
             STATE LEVEL <br></br>INTER-COLLEGIATE FEST
           </p>
 
