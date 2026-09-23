@@ -189,8 +189,20 @@ const About = () => {
           sm:leading-7
         "
             >
-              Kshithija is the annual college fest conducted by the NSS unit of
-              Poornaprajna College, Udupi.
+              Kshitija, meaning Horizon, is a celebration of endless
+              possibilities, new beginnings, and the journey towards a better
+              future. Our fest is built around the theme “Yugmam”, which
+              represents unity and the coming together of different eras, ideas,
+              cultures, and perspectives. It reflects the beautiful connection
+              between our rich heritage and the evolving modern world. Kshitija
+              brings together students from different colleges, backgrounds, and
+              talents on one platform. Through culture, creativity, competition,
+              and the spirit of service, we celebrate what unites us while
+              embracing what makes each of us unique. As an NSS fest, Kshitija
+              goes beyond celebration. It carries the values of service,
+              leadership, teamwork, social responsibility, and youth
+              empowerment. Yugmam connects us. Kshitija inspires us. Together,
+              we move towards a limitless future.
             </p>
 
             {/* Button */}
@@ -402,7 +414,7 @@ const About = () => {
                 className="
             text-[13px]
             leading-6
-            text-white/65
+            text-white
             sm:text-base
             sm:leading-7
             text-base
@@ -447,7 +459,7 @@ const About = () => {
             hidden
             text-sm
             leading-7
-            text-white/60
+            text-white
 
             sm:block
           "
@@ -704,7 +716,7 @@ const About = () => {
                 className="
             text-[13px]
             leading-6
-            text-white/65
+            text-white
 
             sm:text-sm
             sm:leading-7
@@ -721,7 +733,7 @@ const About = () => {
             hidden
             text-base
             leading-7
-            text-white/60
+            text-white
 
             sm:block
           "
