@@ -239,14 +239,15 @@ function Home() {
               <img
                 src={kshitijaLogo}
                 alt="kshitija"
-                className="w-auto max-w-[90vw] sm:max-w-[200px] lg:max-w-[600px] h-auto object-contain drop-shadow-[0_0_30px_rgba(255,200,80,0.35)]"
+                className="w-auto max-w-[70vw] sm:max-w-[100px] lg:max-w-[400px] h-auto object-contain drop-shadow-[0_0_30px_rgba(255,200,80,0.35)]"
               />
             </div>
           </div>
 
           {/* COLLEGE FEST */}
-          <p className="text-2 uppercase tracking-[0.55em] text-white  sm:text-sm font-bold font-[poppins]">
-            STATE LEVEL <br></br>INTER-COLLEGIATE FEST
+          <p className="font-['Roboto_Condensed'] text-sm uppercase tracking-[0.55em] text-white font-bold">
+            STATE LEVEL <br />
+            INTER-COLLEGIATE FEST
           </p>
 
           {/* DECORATIVE LINE */}
