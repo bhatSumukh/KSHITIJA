@@ -260,7 +260,7 @@ function Home() {
           </div>
 
           {/* YUGMAM */}
-          <h2 className="mt-3 font-['Samarkan'] text-2xl tracking-[0.3em] text-white sm:text-3xl md:text-4xl">
+          <h2 className="mt-3 font-['Samarkan'] text-3xl tracking-[0.3em] text-white sm:text-3xl md:text-4xl">
             YUGMAM
           </h2>
 
@@ -269,7 +269,7 @@ function Home() {
           </p>
 
           {/* DATE + LOCATION */}
-          <div className="mt-4 flex flex-col justify-center gap-3 text-xs text-white/90 sm:flex-row sm:gap-6 sm:text-sm">
+          <div className="mt-4 flex flex-col justify-center items-center gap-3 text-xs text-white/90 sm:flex-row sm:gap-6 sm:text-sm">
             <div className="flex items-center gap-2">
               <span className="text-base text-[#f5c451]">◫</span>
 

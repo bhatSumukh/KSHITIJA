@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 
-const API_URL =
-  import.meta.env.VITE_API_URL || "http://localhost:5000/api";
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
 
 function Registration() {
   const [colleges, setColleges] = useState([]);
@@ -791,7 +790,9 @@ function Registration() {
                               }`}
                             >
                               {event.name} <br />
-                              <span className="ml-2 text-sm text-gray-400">— {event.type}</span>
+                              <span className="ml-2 text-sm text-gray-400">
+                                — {event.type}
+                              </span>
                             </h3>
 
                             <p className="mt-1 text-[9px] uppercase tracking-[0.2em] text-white/30">
@@ -984,8 +985,8 @@ function Registration() {
               SUBMIT
           ================================================= */}
 
-          <div className="mt-8 flex flex-col items-center justify-between gap-6 border-t border-white/10 pt-8 sm:flex-row">
-            <div>
+          <div className="mt-8 flex flex-col items-center border-t border-white/10 pt-8">
+            <div className="text-center">
               <p className="text-[9px] uppercase tracking-[0.3em] text-white/25">
                 Ready to participate?
               </p>
@@ -1000,10 +1001,15 @@ function Registration() {
             <button
               type="submit"
               disabled={loading || selectedEvents.length === 0}
-              className="w-full border border-[#e7b65a] bg-[#e7b65a] px-10 py-4 text-[10px] uppercase tracking-[0.3em] text-[#020b14] transition duration-300 hover:bg-transparent hover:text-[#e7b65a] disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto"
+              className="mt-6 w-full border border-[#e7b65a] bg-[#e7b65a] px-10 py-4 text-[10px] uppercase tracking-[0.3em] text-[#020b14] transition duration-300 hover:bg-transparent hover:text-[#e7b65a] disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto"
             >
               {loading ? "Submitting..." : "Register Now"}
             </button>
+
+            <p className="mt-4 max-w-lg text-center text-[10px] leading-5 text-white/30">
+              Please ensure that all participant details entered above are
+              correct before submitting the registration.
+            </p>
           </div>
         </form>
       </section>
@@ -1018,7 +1024,7 @@ function Registration() {
         </p>
 
         <p className="mt-3 text-[9px] uppercase tracking-[0.25em] text-[#e7b65a]/40">
-          YUGMAM — WHERE TWO WORLDS UNITE
+          YUGMAM — WHERE TRADITION MEETS TOMORROW
         </p>
       </footer>
     </main>
