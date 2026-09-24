@@ -192,7 +192,7 @@ function Home() {
             SIDE TEXT — LEFT
         ================================================== */}
         <div className="absolute left-[5%] top-[20%] hidden w-28 text-center md:block">
-          <p className="text-[10px] leading-[1.9] tracking-[0.32em] text-white/75">
+          <p className="text-[10px] leading-[1.9] tracking-[0.32em] text-white">
             OUR
             <br />
             ROOTS
@@ -209,7 +209,7 @@ function Home() {
             SIDE TEXT — RIGHT
         ================================================== */}
         <div className="absolute right-[5%] top-[20%] hidden w-28 text-center md:block">
-          <p className="text-[10px] leading-[1.9] tracking-[0.32em] text-white/75">
+          <p className="text-[10px] leading-[1.9] tracking-[0.32em] text-white">
             NEW
             <br />
             IDEAS
@@ -229,7 +229,7 @@ function Home() {
         ================================================== */}
         <div className="relative z-10 mx-auto flex w-full max-w-5xl flex-col justify-center items-center px-5 pt-24 text-center">
           {/* NSS PRESENTS */}
-          <p className="text-[20px] uppercase tracking-[0.6em] text-white/80 sm:text-xs">
+          <p className="font-sans font-semibold text-[20px] uppercase tracking-[0.2em] text-white/80 sm:text-xs">
             NSS PRESENTS
           </p>
 
@@ -239,13 +239,13 @@ function Home() {
               <img
                 src={kshitijaLogo}
                 alt="kshitija"
-                className="w-auto max-w-[70vw] sm:max-w-[100px] lg:max-w-[400px] h-auto object-contain drop-shadow-[0_0_30px_rgba(255,200,80,0.35)]"
+                className="w-auto max-w-[65vw] sm:max-w-[100px] lg:max-w-[400px] h-auto object-contain drop-shadow-[0_0_30px_rgba(255,200,80,0.35)]"
               />
             </div>
           </div>
 
           {/* COLLEGE FEST */}
-          <p className="font-['Roboto_Condensed'] text-sm uppercase tracking-[0.55em] text-white font-bold">
+          <p className="font-['poppins'] text-sm uppercase tracking-[0.55em] text-white font-bold">
             STATE LEVEL <br />
             INTER-COLLEGIATE FEST
           </p>
@@ -260,28 +260,28 @@ function Home() {
           </div>
 
           {/* YUGMAM */}
-          <h2 className="mt-3 font-serif text-2xl tracking-[0.3em] text-white sm:text-3xl md:text-4xl">
+          <h2 className="mt-3 font-['Samarkan'] text-2xl tracking-[0.3em] text-white sm:text-3xl md:text-4xl">
             YUGMAM
           </h2>
 
-          <p className="mt-2 text-[10px] uppercase tracking-[0.38em] text-white/85 sm:text-xs">
+          <p className="font-semibold mt-2 text-[10px] uppercase tracking-[0.38em] text-white sm:text-xs">
             WHERE TRADITION MEETS TOMORROW
           </p>
 
           {/* DATE + LOCATION */}
-          <div className="mt-4 flex flex-col items-center gap-3 text-xs text-white/90 sm:flex-row sm:gap-6 sm:text-sm">
+          <div className="mt-4 flex flex-col justify-center gap-3 text-xs text-white/90 sm:flex-row sm:gap-6 sm:text-sm">
             <div className="flex items-center gap-2">
               <span className="text-base text-[#f5c451]">◫</span>
 
-              <span>OCT 9, 2026</span>
+              <span className="text-white font-bold">OCT 9, 2026</span> 
             </div>
-
+         
             <span className="hidden text-[#f5c451] sm:block">|</span>
 
             <div className="flex items-center gap-2">
               <span className="text-base text-[#f5c451]">◉</span>
 
-              <span>POORNAPRAJNA COLLEGE (AUTONOMOUS), UDUPI</span>
+              <span className="text-sm text-white font-bold">POORNAPRAJNA COLLEGE (AUTONOMOUS), UDUPI</span>
             </div>
           </div>
 

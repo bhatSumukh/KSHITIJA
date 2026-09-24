@@ -150,7 +150,7 @@ const About = () => {
           lg:text-7xl
         "
             >
-              KSHITIJA
+              KSHITIJA - YUGMAM
             </h3>
 
             {/* Divider */}

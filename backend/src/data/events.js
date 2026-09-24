@@ -9,8 +9,8 @@ const events = [
   },
 
   {
-    name: "VASUDHAIVA NRITYAM",
-    slug: "vasudhaiva nrityam",
+    name: "NARIPARIVARTANAM",
+    slug: "nariparivartanam",
     type: "Dance",
     minTeamSize: 7,
     teamSize: 10,
@@ -54,9 +54,9 @@ const events = [
   },
 
   {
-    name: "JANASABHA",
-    slug: "janasabha",
-    type: "Deabte",
+    name: "JANSABHA",
+    slug: "jansabha",
+    type: "Debate",
     minTeamSize: 2,
     teamSize: 2,
     teamSizeFinalized: true,
