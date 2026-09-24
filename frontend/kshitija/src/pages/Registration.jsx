@@ -715,7 +715,6 @@ function Registration() {
           {/* =================================================
               EVENTS
           ================================================= */}
-           <ScrollReveal delay={300}>
 
           <div className="mt-8 border border-white/10 bg-[#071522] p-7 sm:p-10">
             <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
@@ -974,7 +973,6 @@ function Registration() {
               )}
             </div>
           </div>
-          </ScrollReveal>
 
           {/* =================================================
               ERROR MESSAGE
