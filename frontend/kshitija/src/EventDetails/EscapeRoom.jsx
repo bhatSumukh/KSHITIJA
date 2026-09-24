@@ -76,7 +76,6 @@ function EscapeRoom() {
           {/* GUIDELINES */}
           <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-7 sm:p-10">
             <div className="mb-8 flex items-center gap-4">
-              <span className="text-sm text-[#e7b65a]">01</span>
 
               <h2 className="font-serif text-3xl text-white">Guidelines</h2>
             </div>
@@ -87,6 +86,9 @@ function EscapeRoom() {
                   key={index}
                   className="flex gap-4 border-b border-white/10 pb-5 last:border-0"
                 >
+                  <span className="text-sm text-[#e7b65a]">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
 
                   <p className="text-sm leading-7 text-white/65">{guideline}</p>
                 </div>

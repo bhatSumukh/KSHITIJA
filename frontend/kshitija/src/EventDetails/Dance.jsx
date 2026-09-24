@@ -74,7 +74,6 @@ function Dance() {
           {/* GUIDELINES */}
           <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-7 sm:p-10">
             <div className="mb-8 flex items-center gap-4">
-
               <h2 className="font-serif text-3xl text-white">Guidelines</h2>
             </div>
 
@@ -84,55 +83,52 @@ function Dance() {
                   key={index}
                   className="flex gap-4 border-b border-white/10 pb-5 last:border-0"
                 >
-
+                  <span className="text-sm text-[#e7b65a]">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
                   <p className="text-sm leading-7 text-white/65">{guideline}</p>
                 </div>
               ))}
             </div>
           </div>
 
-             {/* TIMING */}
+          {/* TIMING */}
           <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-7 sm:p-10">
             <div className="">
-
               <div className="mb-8 flex items-center gap-4">
-              {/* <span className="text-sm text-[#e7b65a]">03</span> */}
+                {/* <span className="text-sm text-[#e7b65a]">03</span> */}
 
-              <h2 className="font-serif text-3xl text-white">
-                Student Coordinator
-              </h2>
-            </div>
-
-            <p className="text-xl text-white">
-              {event.studentCoordinator1.name}
-            </p>
-
-            <p className="mb-3 text-sm text-white/50">
-              {event.studentCoordinator1.phone}
-            </p>
-
-            <p className="text-xl text-white">
-              {event.studentCoordinator2.name}
-            </p>
-
-            <p className="mb-3 text-sm text-white/50">
-              {event.studentCoordinator2.phone}
-            </p>
-          </div>
-
-              <div>
-                <p className="text-xl text-white">
-                  Event Time
-                </p>
-
-                <p className="mt-2 text-lg text-[#f2c873]">
-                  {event.timing.event}
-                </p>
+                <h2 className="font-serif text-3xl text-white">
+                  Student Coordinator
+                </h2>
               </div>
 
+              <p className="text-xl text-white">
+                {event.studentCoordinator1.name}
+              </p>
+
+              <p className="mb-3 text-sm text-white/50">
+                {event.studentCoordinator1.phone}
+              </p>
+
+              <p className="text-xl text-white">
+                {event.studentCoordinator2.name}
+              </p>
+
+              <p className="mb-3 text-sm text-white/50">
+                {event.studentCoordinator2.phone}
+              </p>
+            </div>
+
+            <div>
+              <p className="text-xl text-white">Event Time</p>
+
+              <p className="mt-2 text-lg text-[#f2c873]">
+                {event.timing.event}
+              </p>
             </div>
           </div>
-
+        </div>
       </div>
     </section>
   );
