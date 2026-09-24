@@ -1,4 +1,5 @@
 // import { Link } from "react-router-dom";
+import ScrollReveal from "../components/scrollReveal";
 
 function Guidelines() {
   return (
@@ -22,16 +23,20 @@ function Guidelines() {
 
 
         <div className="relative mx-auto max-w-7xl">
+          <ScrollReveal delay={300}>
 
           <p className="text-[10px] uppercase tracking-[0.5em] text-[#e7b65a]">
             KSHITIJA 2026
           </p>
+          </ScrollReveal>
 
+        <ScrollReveal delay={500}>
           <h1 className="mt-5 max-w-4xl font-serif text-5xl leading-[0.95] text-[#f2c873] sm:text-7xl lg:text-8xl">
             PARTICIPANT
             <br />
             GUIDELINES
           </h1>
+          </ScrollReveal>
 
           <div className="mt-8 max-w-2xl">
 
@@ -68,6 +73,8 @@ function Guidelines() {
 
           <div className="mb-16 border border-[#e7b65a]/20 bg-[#071522]/70 p-7 sm:p-10">
 
+          <ScrollReveal delay={500}>
+
             <p className="text-[9px] uppercase tracking-[0.35em] text-[#e7b65a]">
               BEFORE YOU REGISTER
             </p>
@@ -75,6 +82,7 @@ function Guidelines() {
             <h2 className="mt-3 font-serif text-3xl text-[#f2c873]">
               Please Read Carefully
             </h2>
+            </ScrollReveal>
 
             <p className="mt-5 text-sm leading-7 text-white/50">
               Participating colleges are requested to

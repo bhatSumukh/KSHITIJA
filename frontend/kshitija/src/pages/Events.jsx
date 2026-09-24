@@ -9,14 +9,15 @@ import facepainting from "../assets/facepainting.png";
 import reelmaking from "../assets/reelmaking.png";
 import singing from "../assets/singing.png";
 import streetplay from "../assets/streetplay.png";
-// import 
+import ScrollReveal from "../components/scrollReveal";
+// import
 
 const events = [
   {
     id: 1,
     name: "YUGANTARA",
     slug: "yugantara",
-    category:"STREET PLAY",
+    category: "STREET PLAY",
     description:
       "Bring stories to life through powerful acting, social themes, and creative storytelling.",
     teamSize: "7-10 Members",
@@ -56,16 +57,16 @@ const events = [
     image: facepainting,
   },
 
-{
-  id: 5,
-  name: "RUPANTARA",
-  slug: "rupantara",
-  category: "BEST OUT OF WASTE",
-  description:
-    "Transform discarded materials into creative, meaningful, and visually striking art.",
-  teamSize: "2 Members",
-  image: bestwest,
-},
+  {
+    id: 5,
+    name: "RUPANTARA",
+    slug: "rupantara",
+    category: "BEST OUT OF WASTE",
+    description:
+      "Transform discarded materials into creative, meaningful, and visually striking art.",
+    teamSize: "2 Members",
+    image: bestwest,
+  },
 
   {
     id: 6,
@@ -198,7 +199,7 @@ const Events = () => {
               {/* ===============================
                   EVENT INFO
               ================================ */}
-
+              <ScrollReveal delay={300}>
               <div className="p-6">
                 <p className="min-h-[84px] text-sm leading-6 text-white/55">
                   {event.description}
@@ -215,6 +216,7 @@ const Events = () => {
                   </span>
                 </div>
               </div>
+              </ScrollReveal>
               <Link
                 to={`/events/${event.slug}`}
                 className="mt-6 flex w-full items-center justify-between border border-[#e7b65a]/40 px-4 py-3 text-[10px] uppercase tracking-[0.25em] text-[#e7b65a] transition duration-300 hover:border-[#e7b65a] hover:bg-[#e7b65a] hover:text-[#020b14]"

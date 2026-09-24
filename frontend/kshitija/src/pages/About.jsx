@@ -5,6 +5,7 @@
 import kshitijaAbout from "../assets/about-kshitija.png";
 import ppcAbout from "../assets/about-ppc.png";
 import nssAbout from "../assets/about-nss.png";
+import ScrollReveal from "../components/scrollReveal";
 
 const About = () => {
   return (
@@ -138,6 +139,7 @@ const About = () => {
             </p>
 
             {/* Main heading */}
+            <ScrollReveal delay={300}>
             <h3
               className="
           font-serif
@@ -152,11 +154,13 @@ const About = () => {
             >
               KSHITIJA - YUGMAM
             </h3>
+            </ScrollReveal>
 
             {/* Divider */}
             <div className="my-5 h-px w-16 bg-[#e7b65a] sm:my-6 sm:w-20" />
 
             {/* Subtitle */}
+            <ScrollReveal delay={500}>
             <h4
               className="
           max-w-sm
@@ -174,6 +178,7 @@ const About = () => {
               MORE THAN A FEST,
               <br />A MEETING OF WORLDS.
             </h4>
+            </ScrollReveal>
 
             {/* Description */}
             <p
@@ -203,6 +208,7 @@ const About = () => {
             </p>
 
             {/* Button */}
+            <ScrollReveal delay={300}>
             <div className="mt-7 sm:mt-8">
               <a
                 href="#events"
@@ -235,6 +241,7 @@ const About = () => {
                 </span>
               </a>
             </div>
+            </ScrollReveal>
           </div>
         </div>
 
@@ -350,6 +357,7 @@ const About = () => {
             {/* =========================
           COLLEGE NAME
       ========================== */}
+      <ScrollReveal delay={300}>
             <h3
               className="
           font-serif
@@ -367,6 +375,7 @@ const About = () => {
               <br />
               COLLEGE
             </h3>
+            </ScrollReveal>
 
             {/* Location */}
             <p className="mt-3 text-[9px] uppercase tracking-[0.35em] text-white/50 sm:text-xs">
@@ -508,6 +517,7 @@ const About = () => {
             {/* =========================
           BUTTON
       ========================== */}
+      <ScrollReveal delay={300}>
             <div className="mt-7 sm:mt-8">
               <a
                 href="https://www.ppc.ac.in/"
@@ -542,6 +552,7 @@ const About = () => {
                 </span>
               </a>
             </div>
+            </ScrollReveal>
           </div>
         </div>
 
@@ -658,6 +669,7 @@ const About = () => {
             {/* =========================
           NSS TITLE
       ========================== */}
+      <ScrollReveal delay={300}>
             <h3
               className="
           font-serif
@@ -673,6 +685,7 @@ const About = () => {
             >
               NSS
             </h3>
+            </ScrollReveal>
 
             {/* Subtitle */}
             <p className="mt-3 text-[9px] uppercase tracking-[0.35em] text-white/50 sm:text-xs">
@@ -789,6 +802,7 @@ const About = () => {
             {/* =========================
           BUTTON
       ========================== */}
+      <ScrollReveal delay={400}>
             <div className="mt-7 sm:mt-8">
               <a
                 href="https://www.ppc.ac.in/nss"
@@ -823,6 +837,7 @@ const About = () => {
                 </span>
               </a>
             </div>
+            </ScrollReveal>
           </div>
         </div>
 

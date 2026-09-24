@@ -5,6 +5,7 @@ import herobg from "../assets/hero-bg.png";
 import ppclogo from "../assets/ppc-logo2.png";
 import kshitijaLogo from "../assets/kshi2.png";
 import mobileHeroBg from "../assets/heromob.png";
+import ScrollReveal from "../components/scrollReveal";
 
 function Home() {
   const [timeLeft, setTimeLeft] = useState({
@@ -67,30 +68,34 @@ function Home() {
       <header className="fixed top-0 left-0 z-50 w-full">
         <nav className="mx-auto flex h-[72px] w-full items-center justify-between border-b border-white/10 bg-[#031426]/80 px-6 backdrop-blur-md lg:px-20">
           {/* NSS BRAND */}
-          <div className="flex items-center gap-3">
-            <img
-              src={nsslogo}
-              alt="NSS Poornaprajna College"
-              className="h-10 w-10 object-contain"
-            />
-            <img
-              src={ppclogo}
-              alt="Poornaprajna college udupi"
-              className="h-13 w-13 object-contain"
-            />
+          <ScrollReveal delay={500}>
+            <div className="flex items-center gap-3">
+              <img
+                src={nsslogo}
+                alt="NSS Poornaprajna College"
+                className="h-10 w-10 object-contain"
+              />
+              <img
+                src={ppclogo}
+                alt="Poornaprajna college udupi"
+                className="h-13 w-13 object-contain"
+              />
 
-            <div className="hidden leading-tight sm:block">
-              <p className="font-serif text-xl tracking-wide text-white">NSS</p>
+              <div className="hidden leading-tight sm:block">
+                <p className="font-serif text-xl tracking-wide text-white">
+                  NSS
+                </p>
 
-              <p className="text-[11px] uppercase tracking-[0.15em] text-white/80">
-                POORNAPRAJNA COLLEGE AUTONOMOUS
-              </p>
+                <p className="text-[11px] uppercase tracking-[0.15em] text-white/80">
+                  POORNAPRAJNA COLLEGE AUTONOMOUS
+                </p>
 
-              <p className="text-[10px] uppercase tracking-[0.18em] text-white/60">
-                UDUPI
-              </p>
+                <p className="text-[10px] uppercase tracking-[0.18em] text-white/60">
+                  UDUPI
+                </p>
+              </div>
             </div>
-          </div>
+          </ScrollReveal>
 
           {/* CENTER BRAND */}
           {/* <div className="absolute left-1/2 hidden -translate-x-1/2 md:block">
@@ -135,23 +140,26 @@ function Home() {
             >
               Contact
             </a>
-
-            <a
-              href="#registration"
-              className="flex items-center gap-3 rounded-full bg-[#f6c653] px-8 py-3 text-sm font-semibold text-[#07111c] transition duration-300 hover:scale-105 hover:bg-[#ffd978]"
-            >
-              Register Now
-              <span className="text-lg">→</span>
-            </a>
+            <ScrollReveal delay={500}>
+              <a
+                href="#registration"
+                className="flex items-center gap-3 rounded-full bg-[#f6c653] px-8 py-3 text-sm font-semibold text-[#07111c] transition duration-300 hover:scale-105 hover:bg-[#ffd978]"
+              >
+                Register Now
+                <span className="text-lg">→</span>
+              </a>
+            </ScrollReveal>
           </div>
 
           {/* MOBILE REGISTER */}
+          <ScrollReveal delay={500}>
           <a
             href="#registration"
             className="rounded-full bg-[#f6c653] px-5 py-2.5 text-sm font-semibold text-[#07111c] lg:hidden"
           >
             Register
           </a>
+          </ScrollReveal>
         </nav>
       </header>
 
@@ -235,13 +243,15 @@ function Home() {
 
           {/* LOGO PLACEHOLDER */}
           <div className="w-full flex justify-center">
-            <div className="w-full flex items-center justify-center min-h-[150px] sm:min-h-[150px] lg:min-h-[100px]">
-              <img
-                src={kshitijaLogo}
-                alt="kshitija"
-                className="w-auto max-w-[65vw] sm:max-w-[100px] lg:max-w-[400px] h-auto object-contain drop-shadow-[0_0_30px_rgba(255,200,80,0.35)]"
-              />
-            </div>
+            <ScrollReveal delay={600}>
+              <div className="w-full flex items-center justify-center min-h-[150px] sm:min-h-[150px] lg:min-h-[100px]">
+                <img
+                  src={kshitijaLogo}
+                  alt="kshitija"
+                  className="w-auto max-w-[65vw] sm:max-w-[100px] lg:max-w-[400px] h-auto object-contain drop-shadow-[0_0_30px_rgba(255,200,80,0.35)]"
+                />
+              </div>
+            </ScrollReveal>
           </div>
 
           {/* COLLEGE FEST */}
@@ -260,9 +270,11 @@ function Home() {
           </div>
 
           {/* YUGMAM */}
-          <h2 className="mt-3 font-['Samarkan'] text-3xl tracking-[0.3em] text-white sm:text-3xl md:text-4xl">
-            YUGMAM
-          </h2>
+          <ScrollReveal delay={300}>
+            <h2 className="mt-3 font-['Samarkan'] text-3xl tracking-[0.3em] text-white sm:text-3xl md:text-4xl">
+              YUGMAM
+            </h2>
+          </ScrollReveal>
 
           <p className="font-semibold mt-2 text-[10px] uppercase tracking-[0.38em] text-white sm:text-xs">
             WHERE TRADITION MEETS TOMORROW
@@ -273,15 +285,17 @@ function Home() {
             <div className="flex items-center gap-2">
               <span className="text-base text-[#f5c451]">◫</span>
 
-              <span className="text-white font-bold">OCT 9, 2026</span> 
+              <span className="text-white font-bold">OCT 9, 2026</span>
             </div>
-         
+
             <span className="hidden text-[#f5c451] sm:block">|</span>
 
             <div className="flex items-center gap-2">
               <span className="text-base text-[#f5c451]">◉</span>
 
-              <span className="text-sm text-white font-bold">POORNAPRAJNA COLLEGE (AUTONOMOUS), UDUPI</span>
+              <span className="text-sm text-white font-bold">
+                POORNAPRAJNA COLLEGE (AUTONOMOUS), UDUPI
+              </span>
             </div>
           </div>
 
@@ -313,15 +327,17 @@ function Home() {
             </div>
 
             {/* COUNTDOWN BOXES */}
-            <div className="mt-2 grid grid-cols-4 gap-2 sm:gap-3">
-              <CountdownBox value={timeLeft.days} label="DAYS" />
+            <ScrollReveal delay={300}>
+              <div className="mt-2 grid grid-cols-4 gap-2 sm:gap-3">
+                <CountdownBox value={timeLeft.days} label="DAYS" />
 
-              <CountdownBox value={timeLeft.hours} label="HOURS" />
+                <CountdownBox value={timeLeft.hours} label="HOURS" />
 
-              <CountdownBox value={timeLeft.minutes} label="MINUTES" />
+                <CountdownBox value={timeLeft.minutes} label="MINUTES" />
 
-              <CountdownBox value={timeLeft.seconds} label="SECONDS" />
-            </div>
+                <CountdownBox value={timeLeft.seconds} label="SECONDS" />
+              </div>
+            </ScrollReveal>
           </div>
         </div>
 

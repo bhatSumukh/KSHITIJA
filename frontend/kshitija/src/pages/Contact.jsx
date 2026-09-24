@@ -1,4 +1,5 @@
 // import { Link } from "react-router-dom";
+import ScrollReveal from "../components/scrollReveal";
 
 const coordinators = [
   {
@@ -84,6 +85,7 @@ function Contact() {
 
           <div className="grid gap-6 md:grid-cols-3">
             {coordinators.map((coordinator, index) => (
+              <ScrollReveal delay={300}>
               <div
                 key={index}
                 className="group border border-[#e7b65a]/20 bg-[#071522] p-8 transition duration-500 hover:border-[#e7b65a]/50 hover:bg-[#0a1b2b]"
@@ -155,6 +157,7 @@ function Contact() {
                   </a> */}
                 </div>
               </div>
+              </ScrollReveal>
             ))}
           </div>
         </div>

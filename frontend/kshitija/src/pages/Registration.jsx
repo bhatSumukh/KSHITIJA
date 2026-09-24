@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import ScrollReveal from "../components/scrollReveal";
 
 const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
 
@@ -611,6 +612,7 @@ function Registration() {
           {/* =================================================
               COLLEGE DETAILS
           ================================================= */}
+          <ScrollReveal delay={300}>
 
           <div className="border border-white/10 bg-[#071522] p-7 sm:p-10">
             <div>
@@ -708,10 +710,12 @@ function Registration() {
               </div>
             </div>
           </div>
+          </ScrollReveal>
 
           {/* =================================================
               EVENTS
           ================================================= */}
+           <ScrollReveal delay={300}>
 
           <div className="mt-8 border border-white/10 bg-[#071522] p-7 sm:p-10">
             <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
@@ -970,6 +974,7 @@ function Registration() {
               )}
             </div>
           </div>
+          </ScrollReveal>
 
           {/* =================================================
               ERROR MESSAGE
@@ -1006,7 +1011,7 @@ function Registration() {
               {loading ? "Submitting..." : "Register Now"}
             </button>
 
-            <p className="mt-4 max-w-lg text-center text-[10px] leading-5 text-white/30">
+            <p className="mt-4 max-w-lg text-center text-[15px] leading-5 text-white/80">
               Please ensure that all participant details entered above are
               correct before submitting the registration.
             </p>
