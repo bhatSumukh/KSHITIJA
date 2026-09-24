@@ -243,7 +243,7 @@ function Home() {
 
           {/* LOGO PLACEHOLDER */}
           <div className="w-full flex justify-center">
-            <ScrollReveal delay={600}>
+            <ScrollReveal delay={500}>
               <div className="w-full flex items-center justify-center min-h-[150px] sm:min-h-[150px] lg:min-h-[100px]">
                 <img
                   src={kshitijaLogo}

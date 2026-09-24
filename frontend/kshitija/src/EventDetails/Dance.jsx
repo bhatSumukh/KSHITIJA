@@ -54,7 +54,7 @@ function Dance() {
           <span className="h-px w-16 bg-[#e7b65a]/60" />
         </div>
 
-        <h1 className="font-serif text-5xl text-[#f2c873] sm:text-6xl lg:text-7xl">
+        <h1 className="font-serif text-3xl text-[#f2c873] sm:text-2xl lg:text-7xl">
           {event.name}
         </h1>
 
@@ -74,7 +74,6 @@ function Dance() {
           {/* GUIDELINES */}
           <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-7 sm:p-10">
             <div className="mb-8 flex items-center gap-4">
-              <span className="text-sm text-[#e7b65a]">01</span>
 
               <h2 className="font-serif text-3xl text-white">Guidelines</h2>
             </div>
@@ -85,9 +84,6 @@ function Dance() {
                   key={index}
                   className="flex gap-4 border-b border-white/10 pb-5 last:border-0"
                 >
-                  <span className="text-sm text-[#e7b65a]">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
 
                   <p className="text-sm leading-7 text-white/65">{guideline}</p>
                 </div>
