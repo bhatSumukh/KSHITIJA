@@ -781,30 +781,30 @@ function Registration() {
                       <button
                         type="button"
                         onClick={() => handleEventSelect(event)}
-                        className="flex w-full items-center justify-between px-5 py-5 text-left sm:px-7"
+                        className="flex w-full items-center justify-between gap-2 px-3 py-4 text-left sm:gap-4 sm:px-5 sm:py-5 lg:px-7"
                       >
-                        <div className="flex items-center gap-5">
+                        <div className="flex min-w-0 items-center gap-3 sm:gap-5">
                           <span
-                            className={`font-serif text-lg ${
+                            className={`shrink-0 font-serif text-sm sm:text-lg ${
                               isSelected ? "text-[#e7b65a]" : "text-white/20"
                             }`}
                           >
                             {String(index + 1).padStart(2, "0")}
                           </span>
 
-                          <div>
+                          <div className="min-w-0">
                             <h3
-                              className={`font-serif text-xl ${
+                              className={`font-serif text-base leading-tight sm:text-xl ${
                                 isSelected ? "text-[#f2c873]" : "text-white"
                               }`}
                             >
-                              {event.name} <br />
-                              <span className="ml-2 text-sm text-gray-400">
+                              {event.name}
+                              <span className="ml-1 text-xs text-gray-400 sm:text-sm">
                                 — {event.type}
                               </span>
                             </h3>
 
-                            <p className="mt-1 text-[9px] uppercase tracking-[0.2em] text-white/30">
+                            <p className="mt-1 text-[8px] uppercase tracking-[0.15em] text-white/30 sm:text-[9px] sm:tracking-[0.2em]">
                               {event.teamSizeFinalized &&
                               event.minTeamSize &&
                               event.teamSize
@@ -814,15 +814,15 @@ function Registration() {
                           </div>
                         </div>
 
-                        <div className="flex items-center gap-4">
+                        <div className="flex shrink-0 items-center gap-2 sm:gap-4">
                           {isSelected && (
-                            <span className="text-[9px] uppercase tracking-[0.2em] text-[#e7b65a]">
+                            <span className="hidden text-[9px] uppercase tracking-[0.2em] text-[#e7b65a] sm:inline">
                               Selected
                             </span>
                           )}
 
                           <span
-                            className={`flex h-7 w-7 items-center justify-center border text-sm transition ${
+                            className={`flex h-6 w-6 shrink-0 items-center justify-center border text-xs transition sm:h-7 sm:w-7 sm:text-sm ${
                               isSelected
                                 ? "border-[#e7b65a] bg-[#e7b65a] text-[#020b14]"
                                 : "border-white/15 text-white/30"
