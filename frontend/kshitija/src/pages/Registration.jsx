@@ -284,10 +284,19 @@ function Registration() {
   // --------------------------------------------------
 
   const getTotalParticipants = () => {
-    return Object.values(participantsByEvent).reduce(
-      (total, participants) => total + participants.length,
-      0,
-    );
+    const uniquePhones = new Set();
+
+    Object.values(participantsByEvent).forEach((participants) => {
+      participants.forEach((participant) => {
+        const phone = normalizePhone(participant.phone);
+
+        if (phone) {
+          uniquePhones.add(phone);
+        }
+      });
+    });
+
+    return uniquePhones.size;
   };
 
   // --------------------------------------------------
@@ -441,7 +450,6 @@ function Registration() {
         setMessage(
           `Please enter a valid phone number for ${participant.name}.`,
         );
-
         return;
       }
 
@@ -451,7 +459,6 @@ function Registration() {
         setMessage(
           `${participant.name} and ${previousParticipant.name} cannot be registered for the same college because they use the same phone number.`,
         );
-
         return;
       }
 
@@ -613,103 +620,102 @@ function Registration() {
               COLLEGE DETAILS
           ================================================= */}
           <ScrollReveal delay={300}>
+            <div className="border border-white/10 bg-[#071522] p-7 sm:p-10">
+              <div>
+                <p className="text-[9px] uppercase tracking-[0.4em] text-[#e7b65a]">
+                  COLLEGE DETAILS
+                </p>
 
-          <div className="border border-white/10 bg-[#071522] p-7 sm:p-10">
-            <div>
-              <p className="text-[9px] uppercase tracking-[0.4em] text-[#e7b65a]">
-                COLLEGE DETAILS
-              </p>
+                <h2 className="mt-3 font-serif text-3xl text-white">
+                  Registration Information
+                </h2>
+              </div>
 
-              <h2 className="mt-3 font-serif text-3xl text-white">
-                Registration Information
-              </h2>
-            </div>
+              <div className="mt-10 grid gap-6 md:grid-cols-2">
+                {/* College */}
 
-            <div className="mt-10 grid gap-6 md:grid-cols-2">
-              {/* College */}
+                <div className="md:col-span-2">
+                  <label className="text-[9px] uppercase tracking-[0.25em] text-white/40">
+                    College
+                  </label>
 
-              <div className="md:col-span-2">
-                <label className="text-[9px] uppercase tracking-[0.25em] text-white/40">
-                  College
-                </label>
-
-                <select
-                  name="college"
-                  value={form.college}
-                  onChange={handleChange}
-                  disabled={loadingColleges}
-                  className="mt-2 w-full appearance-none border border-white/10 bg-[#020b14] px-4 py-4 text-sm text-white outline-none transition focus:border-[#e7b65a]/50"
-                >
-                  <option value="">
-                    {loadingColleges
-                      ? "Loading colleges..."
-                      : "Select your college"}
-                  </option>
-
-                  {colleges.map((college) => (
-                    <option
-                      key={college._id}
-                      value={college._id}
-                      className="bg-[#071522]"
-                    >
-                      {college.collegeName}
+                  <select
+                    name="college"
+                    value={form.college}
+                    onChange={handleChange}
+                    disabled={loadingColleges}
+                    className="mt-2 w-full appearance-none border border-white/10 bg-[#020b14] px-4 py-4 text-sm text-white outline-none transition focus:border-[#e7b65a]/50"
+                  >
+                    <option value="">
+                      {loadingColleges
+                        ? "Loading colleges..."
+                        : "Select your college"}
                     </option>
-                  ))}
-                </select>
-              </div>
 
-              {/* Faculty Name */}
+                    {colleges.map((college) => (
+                      <option
+                        key={college._id}
+                        value={college._id}
+                        className="bg-[#071522]"
+                      >
+                        {college.collegeName}
+                      </option>
+                    ))}
+                  </select>
+                </div>
 
-              <div>
-                <label className="text-[9px] uppercase tracking-[0.25em] text-white/40">
-                  Faculty / Team Leader Name
-                </label>
+                {/* Faculty Name */}
 
-                <input
-                  type="text"
-                  name="facultyHeadName"
-                  value={form.facultyHeadName}
-                  onChange={handleChange}
-                  placeholder="Enter full name"
-                  className="mt-2 w-full border border-white/10 bg-[#020b14] px-4 py-4 text-sm text-white outline-none placeholder:text-white/20 focus:border-[#e7b65a]/50"
-                />
-              </div>
+                <div>
+                  <label className="text-[9px] uppercase tracking-[0.25em] text-white/40">
+                    Faculty / Team Leader Name
+                  </label>
 
-              {/* Faculty Phone */}
+                  <input
+                    type="text"
+                    name="facultyHeadName"
+                    value={form.facultyHeadName}
+                    onChange={handleChange}
+                    placeholder="Enter full name"
+                    className="mt-2 w-full border border-white/10 bg-[#020b14] px-4 py-4 text-sm text-white outline-none placeholder:text-white/20 focus:border-[#e7b65a]/50"
+                  />
+                </div>
 
-              <div>
-                <label className="text-[9px] uppercase tracking-[0.25em] text-white/40">
-                  Faculty Phone
-                </label>
+                {/* Faculty Phone */}
 
-                <input
-                  type="tel"
-                  name="facultyPhone"
-                  value={form.facultyPhone}
-                  onChange={handleChange}
-                  placeholder="Enter phone number"
-                  className="mt-2 w-full border border-white/10 bg-[#020b14] px-4 py-4 text-sm text-white outline-none placeholder:text-white/20 focus:border-[#e7b65a]/50"
-                />
-              </div>
+                <div>
+                  <label className="text-[9px] uppercase tracking-[0.25em] text-white/40">
+                    Faculty Phone
+                  </label>
 
-              {/* Faculty Email */}
+                  <input
+                    type="tel"
+                    name="facultyPhone"
+                    value={form.facultyPhone}
+                    onChange={handleChange}
+                    placeholder="Enter phone number"
+                    className="mt-2 w-full border border-white/10 bg-[#020b14] px-4 py-4 text-sm text-white outline-none placeholder:text-white/20 focus:border-[#e7b65a]/50"
+                  />
+                </div>
 
-              <div className="md:col-span-2">
-                <label className="text-[9px] uppercase tracking-[0.25em] text-white/40">
-                  Faculty Email
-                </label>
+                {/* Faculty Email */}
 
-                <input
-                  type="email"
-                  name="facultyEmail"
-                  value={form.facultyEmail}
-                  onChange={handleChange}
-                  placeholder="Enter email address"
-                  className="mt-2 w-full border border-white/10 bg-[#020b14] px-4 py-4 text-sm text-white outline-none placeholder:text-white/20 focus:border-[#e7b65a]/50"
-                />
+                <div className="md:col-span-2">
+                  <label className="text-[9px] uppercase tracking-[0.25em] text-white/40">
+                    Faculty Email
+                  </label>
+
+                  <input
+                    type="email"
+                    name="facultyEmail"
+                    value={form.facultyEmail}
+                    onChange={handleChange}
+                    placeholder="Enter email address"
+                    className="mt-2 w-full border border-white/10 bg-[#020b14] px-4 py-4 text-sm text-white outline-none placeholder:text-white/20 focus:border-[#e7b65a]/50"
+                  />
+                </div>
               </div>
             </div>
-          </div>
           </ScrollReveal>
 
           {/* =================================================
