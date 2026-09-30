@@ -8,12 +8,6 @@ const participantSchema = new mongoose.Schema(
       required: true,
     },
 
-    registration: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "Registration",
-      required: true,
-    },
-
     name: {
       type: String,
       required: true,
@@ -28,19 +22,13 @@ const participantSchema = new mongoose.Schema(
   },
   {
     timestamps: true,
-  }
+  },
 );
 
-// A participant cannot participate in multiple events
-// within the same college.
+// One phone number = one unique participant within a college
 participantSchema.index(
   { college: 1, phone: 1 },
-  { unique: true }
+  { unique: true },
 );
 
-const Participant = mongoose.model(
-  "Participant",
-  participantSchema
-);
-
-module.exports = Participant;
+module.exports = mongoose.model("Participant", participantSchema);

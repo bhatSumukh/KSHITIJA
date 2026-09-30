@@ -38,7 +38,7 @@ const events = [
   {
     name: "RUPANTARA",
     slug: "rupantara",
-    type: "Face Painting",
+    type: "Best out of waste",
     minTeamSize: 2,
     teamSize: 2,
     teamSizeFinalized: true,

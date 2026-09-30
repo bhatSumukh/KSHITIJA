@@ -140,8 +140,8 @@ const About = () => {
 
             {/* Main heading */}
             <ScrollReveal delay={300}>
-            <h3
-              className="
+              <h3
+                className="
           font-serif
           text-5xl
           leading-none
@@ -151,9 +151,9 @@ const About = () => {
           sm:text-6xl
           lg:text-7xl
         "
-            >
-              KSHITIJA - YUGMAM
-            </h3>
+              >
+                KSHITIJA - YUGMAM
+              </h3>
             </ScrollReveal>
 
             {/* Divider */}
@@ -161,8 +161,8 @@ const About = () => {
 
             {/* Subtitle */}
             <ScrollReveal delay={500}>
-            <h4
-              className="
+              <h4
+                className="
           max-w-sm
           text-[11px]
           font-medium
@@ -174,10 +174,10 @@ const About = () => {
           sm:text-sm
           sm:tracking-[0.25em]
         "
-            >
-              MORE THAN A FEST,
-              <br />A MEETING OF WORLDS.
-            </h4>
+              >
+                MORE THAN A FEST,
+                <br />A MEETING OF WORLDS.
+              </h4>
             </ScrollReveal>
 
             {/* Description */}
@@ -191,28 +191,24 @@ const About = () => {
             text-base
         "
             >
-              Kshitija, meaning Horizon, is a celebration of endless
-              possibilities, new beginnings, and the journey towards a better
-              future. Our fest is built around the theme “Yugmam”, which
-              represents unity and the coming together of different eras, ideas,
-              cultures, and perspectives. It reflects the beautiful connection
-              between our rich heritage and the evolving modern world. Kshitija
-              brings together students from different colleges, backgrounds, and
-              talents on one platform. Through culture, creativity, competition,
-              and the spirit of service, we celebrate what unites us while
-              embracing what makes each of us unique. As an NSS fest, Kshitija
-              goes beyond celebration. It carries the values of service,
-              leadership, teamwork, social responsibility, and youth
-              empowerment. Yugmam connects us. Kshitija inspires us. Together,
-              we move towards a limitless future.
+              Kshitija, meaning Horizon, returns for its second edition as a
+              celebration of endless possibilities and new beginnings. <br></br>
+              This year, with the theme “Yugmam”, Kshitija explores the coming
+              together of different eras, ideas, cultures, and perspectives. It
+              celebrates the connection between our rich heritage and the
+              ever-evolving modern world, bringing together students from
+              diverse backgrounds, interests and talents on one platform. As an
+              NSS fest, Kshitija goes beyond celebration, embracing the values
+              of service, leadership, teamwork, social responsibility, and youth
+              empowerment.
             </p>
 
             {/* Button */}
             <ScrollReveal delay={300}>
-            <div className="mt-7 sm:mt-8">
-              <a
-                href="#events"
-                className="
+              <div className="mt-7 sm:mt-8">
+                <a
+                  href="#events"
+                  className="
             group
             inline-flex
             items-center
@@ -234,13 +230,13 @@ const About = () => {
             sm:py-3
             sm:text-sm
           "
-              >
-                Explore Events
-                <span className="transition-transform duration-300 group-hover:translate-x-1">
-                  →
-                </span>
-              </a>
-            </div>
+                >
+                  Explore Events
+                  <span className="transition-transform duration-300 group-hover:translate-x-1">
+                    →
+                  </span>
+                </a>
+              </div>
             </ScrollReveal>
           </div>
         </div>
@@ -357,9 +353,9 @@ const About = () => {
             {/* =========================
           COLLEGE NAME
       ========================== */}
-      <ScrollReveal delay={300}>
-            <h3
-              className="
+            <ScrollReveal delay={300}>
+              <h3
+                className="
           font-serif
           text-4xl
           leading-[0.95]
@@ -370,11 +366,11 @@ const About = () => {
 
           lg:text-6xl
         "
-            >
-              POORNAPRAJNA
-              <br />
-              COLLEGE
-            </h3>
+              >
+                POORNAPRAJNA
+                <br />
+                COLLEGE
+              </h3>
             </ScrollReveal>
 
             {/* Location */}
@@ -429,34 +425,33 @@ const About = () => {
                 Poornaprajna College, popularly known as PPC, is situated in a
                 vast green campus at the heart of Udupi city. It is at a short
                 distance of 1 KM from Udupi Bus Stand, 4 KMs from Udupi Railway
-                Station and about 45 KMs from Mangalore Air Port. Poornaprajna
-                College is one of the educational institutions run by Udupi Sri
-                Admar Mutt Education Council formerly headed by H. H. Sri Sri
-                Vibudhesha Theertha Swamiji of Sri Admar Mutt. Now, the Council
-                is functioning under the leadership of H. H. Sri Sri Eshapriya
-                Theertha Swamiji of Sri Admar Mutt. Poornaprajna College was
-                founded in 1960 by the Swamijis of eight Mathas of Udupi. But,
-                in February 1962, with a view to streamline the day-to-day
-                working of the institution, its maintenance and governance was
-                handed over to Admar Matha Education Council, a registered
-                society functioning under the leadership of H. H. Sri Sri
-                Vibudhesha Theertha Swamiji of Admar Matha. Now, the Council is
-                functioning under the leadership of H. H. Sri Sri Vishwapriya
+                Station and about 45 KMs from Mangalore Air Port.<br></br>{" "}
+                Poornaprajna College is one of the educational institutions run
+                by Udupi Sri Admar Mutt Education Council formerly headed by H.
+                H. Sri Sri Vibudhesha Theertha Swamiji of Sri Admar Mutt. Now,
+                the Council is functioning under the leadership of H. H. Sri Sri
+                Eshapriya Theertha Swamiji of Sri Admar Mutt. Poornaprajna
+                College was founded in 1960 by the Swamijis of eight Mathas of
+                Udupi. But, in February 1962, with a view to streamline the
+                day-to-day working of the institution, its maintenance and
+                governance was handed over to Admar Matha Education Council, a
+                registered society functioning under the leadership of H. H. Sri
+                Sri Vibudhesha Theertha Swamiji of Admar Matha. Now, the Council
+                is functioning under the leadership of H. H. Sri Sri Vishwapriya
                 Theertha Swamiji of Sri Admar Matha. It has now been handed over
-                to H.H. Sri Sri Eeshapriya Theertha Swamiji. ABOUT THE FEST
-                Poornaprajna College (Autonomous), Udupi is pleased to organize
-                State level Intercollegiate fest "PRAJNA-2024" with the tagline
-                Academic & Cultural Talent Search (ACTS), on May 17 & 18, 2024,
-                at PPC campus, PRAJNA-2024 is a splendid platform to showcase
-                students academical as well as cultural talents. Poornaprajna
-                College popularly known as PPC. It is located in the heart of
-                Udupi city. Having a vast green campus has given more exposure
-                to cultural education. Poornaprajna College Udupi is under the
-                administration of Shree Adamaru Matha Educational Institutions.
-                It was established by Sri Sri Vibudhesha Theertha Sripada of Sri
-                Adamaru Mutha and proceeding to Sri Sri Vishwapriya Theertha
-                Sripada, it is currently functioning under the chairmanship of
-                Sri Sri Ishapriya Sripada.
+                to H.H. Sri Sri Eeshapriya Theertha Swamiji.<br></br> ABOUT THE
+                FEST Poornaprajna College (Autonomous), Udupi is pleased to
+                organize State level Intercollegiate fest "PRAJNA-2027" on,
+                2027, at PPC campus, PRAJNA-2027 is a splendid platform to
+                showcase students academical as well as cultural talents.
+                <br></br> Poornaprajna College popularly known as PPC. It is
+                located in the heart of Udupi city. Having a vast green campus
+                has given more exposure to cultural education. Poornaprajna
+                College Udupi is under the administration of Shree Adamaru Matha
+                Educational Institutions. It was established by Sri Sri
+                Vibudhesha Theertha Sripada of Sri Adamaru Mutha and proceeding
+                to Sri Sri Vishwapriya Theertha Sripada, it is currently
+                functioning under the chairmanship of Sri Sri Ishapriya Sripada.
               </p>
 
               <p
@@ -517,13 +512,13 @@ const About = () => {
             {/* =========================
           BUTTON
       ========================== */}
-      <ScrollReveal delay={300}>
-            <div className="mt-7 sm:mt-8">
-              <a
-                href="https://www.ppc.ac.in/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="
+            <ScrollReveal delay={300}>
+              <div className="mt-7 sm:mt-8">
+                <a
+                  href="https://www.ppc.ac.in/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="
             group
             inline-flex
             items-center
@@ -545,13 +540,13 @@ const About = () => {
             sm:py-3
             sm:text-sm
           "
-              >
-                Visit College Website
-                <span className="transition-transform duration-300 group-hover:translate-x-1">
-                  →
-                </span>
-              </a>
-            </div>
+                >
+                  Visit College Website
+                  <span className="transition-transform duration-300 group-hover:translate-x-1">
+                    →
+                  </span>
+                </a>
+              </div>
             </ScrollReveal>
           </div>
         </div>
@@ -669,9 +664,9 @@ const About = () => {
             {/* =========================
           NSS TITLE
       ========================== */}
-      <ScrollReveal delay={300}>
-            <h3
-              className="
+            <ScrollReveal delay={300}>
+              <h3
+                className="
           font-serif
           text-6xl
           leading-none
@@ -682,9 +677,9 @@ const About = () => {
 
           lg:text-8xl
         "
-            >
-              NSS
-            </h3>
+              >
+                NSS
+              </h3>
             </ScrollReveal>
 
             {/* Subtitle */}
@@ -751,14 +746,14 @@ const About = () => {
                 public service program conducted by the ministry of youth
                 affairs and sports of government of india the aim of nss is the
                 development of the personality of students through community
-                service with the motto “not me but you” At present there are 2
-                nss units extending their service in poornaprajna college udupi
-                with strength of 210 volunteers the purpose of the units is to
-                provide students with the experience of social service and
-                personality development this scheme conducts daily activities
-                weekend activities aware programs one day camp annual special
-                camp etc at present mrs suparna and dr nagraj g p are the nss
-                program officers of poornaprajna college.
+                service with the motto “not me but you”. <br></br>At present
+                there are 2 nss units extending their service in poornaprajna
+                college udupi with strength of 210 volunteers the purpose of the
+                units is to provide students with the experience of social
+                service and personality development this scheme conducts daily
+                activities weekend activities aware programs one day camp annual
+                special camp etc at present mrs suparna and dr nagraj g p are
+                the nss program officers of poornaprajna college.
               </p>
             </div>
 
@@ -802,13 +797,13 @@ const About = () => {
             {/* =========================
           BUTTON
       ========================== */}
-      <ScrollReveal delay={400}>
-            <div className="mt-7 sm:mt-8">
-              <a
-                href="https://www.ppc.ac.in/nss"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="
+            <ScrollReveal delay={400}>
+              <div className="mt-7 sm:mt-8">
+                <a
+                  href="https://www.ppc.ac.in/nss"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="
             group
             inline-flex
             items-center
@@ -830,13 +825,13 @@ const About = () => {
             sm:py-3
             sm:text-sm
           "
-              >
-                Explore NSS
-                <span className="transition-transform duration-300 group-hover:translate-x-1">
-                  →
-                </span>
-              </a>
-            </div>
+                >
+                  Explore NSS
+                  <span className="transition-transform duration-300 group-hover:translate-x-1">
+                    →
+                  </span>
+                </a>
+              </div>
             </ScrollReveal>
           </div>
         </div>

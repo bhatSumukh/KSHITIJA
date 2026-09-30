@@ -147,21 +147,6 @@ function Registration() {
     // CHECK COLLEGE 25 PARTICIPANT LIMIT
     // -----------------------------------------------
 
-    const currentTotalParticipants = Object.values(participantsByEvent).reduce(
-      (total, participants) => {
-        return total + participants.length;
-      },
-      0,
-    );
-
-    if (currentTotalParticipants + event.minTeamSize > 25) {
-      setMessage(
-        "A college can register a maximum of 25 participants in total.",
-      );
-
-      return;
-    }
-
     // -----------------------------------------------
     // SELECT EVENT
     // -----------------------------------------------
@@ -209,34 +194,13 @@ function Registration() {
     setParticipantsByEvent((previous) => {
       const currentParticipants = previous[event._id] || [];
 
-      // Already reached event maximum
+      // Event-specific maximum
       if (currentParticipants.length >= event.teamSize) {
-        return previous;
-      }
-
-      // Check overall college limit
-      const otherEventParticipants = Object.entries(previous).reduce(
-        (total, [eventId, participants]) => {
-          if (eventId === event._id) {
-            return total;
-          }
-
-          return total + participants.length;
-        },
-        0,
-      );
-
-      if (otherEventParticipants + currentParticipants.length + 1 > 25) {
-        setMessage(
-          "A college can register a maximum of 25 participants in total.",
-        );
-
         return previous;
       }
 
       return {
         ...previous,
-
         [event._id]: [
           ...currentParticipants,
           {
@@ -424,45 +388,23 @@ function Registration() {
     }
 
     // -----------------------------------------------
-    // CHECK PARTICIPANT PHONE DUPLICATES
-    // ACROSS ALL EVENTS
+    // VALIDATE PHONE NUMBERS
     // -----------------------------------------------
 
-    const allParticipants = [];
-
-    selectedEvents.forEach((eventId) => {
+    for (const eventId of selectedEvents) {
       const participants = participantsByEvent[eventId] || [];
 
-      participants.forEach((participant) => {
-        allParticipants.push({
-          ...participant,
-          eventId,
-        });
-      });
-    });
+      for (const participant of participants) {
+        const normalizedPhone = normalizePhone(participant.phone);
 
-    const phoneMap = new Map();
+        if (!normalizedPhone) {
+          setMessage(
+            `Please enter a valid phone number for ${participant.name}.`,
+          );
 
-    for (const participant of allParticipants) {
-      const normalizedPhone = normalizePhone(participant.phone);
-
-      if (!normalizedPhone) {
-        setMessage(
-          `Please enter a valid phone number for ${participant.name}.`,
-        );
-        return;
+          return;
+        }
       }
-
-      if (phoneMap.has(normalizedPhone)) {
-        const previousParticipant = phoneMap.get(normalizedPhone);
-
-        setMessage(
-          `${participant.name} and ${previousParticipant.name} cannot be registered for the same college because they use the same phone number.`,
-        );
-        return;
-      }
-
-      phoneMap.set(normalizedPhone, participant);
     }
 
     // -----------------------------------------------
@@ -939,9 +881,7 @@ function Registration() {
                             <button
                               type="button"
                               onClick={() => removeParticipant(event)}
-                              disabled={
-                                participants.length <= event.minTeamSize
-                              }
+                              disabled={participants.length >= event.teamSize}
                               className="border border-white/10 px-5 py-3 text-[9px] uppercase tracking-[0.2em] text-white/50 transition hover:border-[#e7b65a]/40 hover:text-[#e7b65a] disabled:cursor-not-allowed disabled:opacity-20"
                             >
                               − Remove

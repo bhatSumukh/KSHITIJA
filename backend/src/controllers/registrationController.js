@@ -5,6 +5,12 @@ const College = require("../models/College");
 const Event = require("../models/Event");
 const Participant = require("../models/Participant");
 
+// Normalize phone numbers so formats like
+// 9876543210 and +91 9876543210 can be compared consistently
+const normalizePhone = (phone) => {
+  return phone.replace(/\D/g, "");
+};
+
 const createRegistration = async (req, res) => {
   const session = await mongoose.startSession();
 
@@ -78,10 +84,6 @@ const createRegistration = async (req, res) => {
     // CHECK TEAM SIZE
     // ---------------------------------------
 
-    // ---------------------------------------
-    // CHECK TEAM SIZE
-    // ---------------------------------------
-
     if (
       !eventExists.teamSizeFinalized ||
       !eventExists.teamSize ||
@@ -102,6 +104,7 @@ const createRegistration = async (req, res) => {
           `${eventExists.minTeamSize} and ${eventExists.teamSize} participants.`,
       });
     }
+
     // ---------------------------------------
     // VALIDATE PARTICIPANTS
     // ---------------------------------------
@@ -115,18 +118,24 @@ const createRegistration = async (req, res) => {
     }
 
     // ---------------------------------------
-    // DUPLICATE PHONE NUMBERS
+    // NORMALIZE PHONE NUMBERS
     // ---------------------------------------
 
-    const phoneNumbers = participants.map((participant) =>
-      participant.phone.trim(),
+    const normalizedPhones = participants.map((participant) =>
+      normalizePhone(participant.phone),
     );
 
-    const uniquePhones = new Set(phoneNumbers);
+    // ---------------------------------------
+    // CHECK DUPLICATE PARTICIPANTS
+    // WITHIN THIS EVENT
+    // ---------------------------------------
 
-    if (uniquePhones.size !== phoneNumbers.length) {
+    const uniquePhones = new Set(normalizedPhones);
+
+    if (uniquePhones.size !== normalizedPhones.length) {
       return res.status(400).json({
-        message: "Two participants cannot have the same phone number.",
+        message:
+          "The same participant cannot be registered more than once for the same event.",
       });
     }
 
@@ -147,30 +156,58 @@ const createRegistration = async (req, res) => {
     }
 
     // ---------------------------------------
-    // CHECK 25 PARTICIPANT LIMIT
+    // START TRANSACTION
+    // ---------------------------------------
+
+    await session.startTransaction();
+
+    // ---------------------------------------
+    // FIND PARTICIPANTS ALREADY REGISTERED
+    // FROM THIS COLLEGE
+    // ---------------------------------------
+
+    const existingParticipants = await Participant.find({
+      college,
+      phone: { $in: normalizedPhones },
+    }).session(session);
+
+    // Phones of participants who already exist
+    const existingPhoneSet = new Set(
+      existingParticipants.map((participant) =>
+        normalizePhone(participant.phone),
+      ),
+    );
+
+    // ---------------------------------------
+    // COUNT EXISTING UNIQUE PARTICIPANTS
     // ---------------------------------------
 
     const existingParticipantCount = await Participant.countDocuments({
       college,
-    });
+    }).session(session);
 
     // ---------------------------------------
-    // CHECK 25 PARTICIPANT LIMIT
+    // COUNT ONLY NEW PARTICIPANTS
     // ---------------------------------------
 
-    if (existingParticipantCount + participants.length > 25) {
+    const newParticipantCount = normalizedPhones.filter(
+      (phone) => !existingPhoneSet.has(phone),
+    ).length;
+
+    // ---------------------------------------
+    // CHECK MAXIMUM 25 UNIQUE PARTICIPANTS
+    // ---------------------------------------
+
+    if (existingParticipantCount + newParticipantCount > 25) {
+      await session.abortTransaction();
+
       return res.status(400).json({
         message:
-          `Your college has already registered ${existingParticipantCount} participants. ` +
-          `A maximum of 25 participants is allowed.`,
+          `Your college already has ${existingParticipantCount} unique participants. ` +
+          `This registration adds ${newParticipantCount} new participants. ` +
+          `A maximum of 25 unique participants is allowed.`,
       });
     }
-
-    // ---------------------------------------
-    // START TRANSACTION
-    // ---------------------------------------
-
-    session.startTransaction();
 
     // ---------------------------------------
     // CREATE REGISTRATION
@@ -194,28 +231,66 @@ const createRegistration = async (req, res) => {
     const registration = registrationResult[0];
 
     // ---------------------------------------
-    // CREATE PARTICIPANTS
+    // MAP EXISTING PARTICIPANTS
     // ---------------------------------------
 
-    const participantDocuments = participants.map((participant) => ({
-      college,
-      registration: registration._id,
-      name: participant.name.trim(),
-      phone: participant.phone.trim(),
-    }));
+    const existingPhoneMap = new Map();
 
-    const createdParticipants = await Participant.insertMany(
-      participantDocuments,
-      { session },
-    );
+    existingParticipants.forEach((participant) => {
+      existingPhoneMap.set(
+        normalizePhone(participant.phone),
+        participant,
+      );
+    });
+
+    // ---------------------------------------
+    // PREPARE PARTICIPANT IDS
+    // ---------------------------------------
+
+    const participantIds = [];
+    const newParticipantDocuments = [];
+
+    participants.forEach((participant, index) => {
+      const normalizedPhone = normalizedPhones[index];
+
+      const existingParticipant =
+        existingPhoneMap.get(normalizedPhone);
+
+      if (existingParticipant) {
+        // Participant already exists for this college.
+        // Reuse the same participant.
+        participantIds.push(existingParticipant._id);
+      } else {
+        // New unique participant.
+        newParticipantDocuments.push({
+          college,
+          name: participant.name.trim(),
+          phone: normalizedPhone,
+        });
+      }
+    });
+
+    // ---------------------------------------
+    // CREATE ONLY NEW PARTICIPANTS
+    // ---------------------------------------
+
+    const createdParticipants =
+      newParticipantDocuments.length > 0
+        ? await Participant.insertMany(newParticipantDocuments, {
+            session,
+          })
+        : [];
+
+    // Add newly created participant IDs
+    createdParticipants.forEach((participant) => {
+      participantIds.push(participant._id);
+    });
 
     // ---------------------------------------
     // CONNECT PARTICIPANTS TO REGISTRATION
     // ---------------------------------------
 
-    registration.participants = createdParticipants.map(
-      (participant) => participant._id,
-    );
+    registration.participants = participantIds;
 
     await registration.save({ session });
 
@@ -232,7 +307,8 @@ const createRegistration = async (req, res) => {
       registrationId: registration._id,
       college: collegeExists.collegeName,
       event: eventExists.name,
-      participants: createdParticipants.length,
+      participants: participantIds.length,
+      newParticipants: newParticipantCount,
     });
   } catch (error) {
     // ---------------------------------------
