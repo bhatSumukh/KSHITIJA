@@ -66,20 +66,20 @@ function Home() {
           NAVBAR
       ====================================================== */}
       <header className="fixed top-0 left-0 z-50 w-full">
-        <nav className="mx-auto flex h-[72px] w-full items-center justify-between border-b border-white/10 bg-[#031426]/80 px-6 backdrop-blur-md lg:px-20">
+        <nav className="flex h-[72px] w-full items-center border-b border-white/10 bg-[#031426]/80 px-4 backdrop-blur-md lg:px-6">
           {/* NSS BRAND */}
-          
-            <div className="flex items-center gap-3">
-              <ScrollReveal delay={500}>
+          <div className="flex items-center">
+            <ScrollReveal delay={500} className="flex items-center gap-3">
               <img
                 src={nsslogo}
                 alt="NSS Poornaprajna College"
                 className="h-10 w-10 object-contain"
               />
+
               <img
                 src={ppclogo}
-                alt="Poornaprajna college udupi"
-                className="h-13 w-13 object-contain"
+                alt="Poornaprajna College Udupi"
+                className="h-11 w-11 object-contain"
               />
 
               <div className="hidden leading-tight sm:block">
@@ -95,18 +95,11 @@ function Home() {
                   UDUPI
                 </p>
               </div>
-              </ScrollReveal>
-            </div>
+            </ScrollReveal>
+          </div>
 
-          {/* CENTER BRAND */}
-          {/* <div className="absolute left-1/2 hidden -translate-x-1/2 md:block">
-            <p className="font-serif text-3xl tracking-[0.12em] text-[#f5c451]">
-              KSHITIJA
-            </p>
-          </div> */}
-
-          {/* NAVIGATION */}
-          <div className="hidden items-center gap-10 lg:flex">
+          {/* DESKTOP NAVIGATION */}
+          <div className="ml-auto hidden items-center gap-10 lg:flex">
             <a
               href="#home"
               className="text-sm text-white/70 transition hover:text-[#f5c451]"
@@ -123,24 +116,25 @@ function Home() {
 
             <a
               href="#events"
-              className="py-2 text-sm text-white/80 transition hover:text-[#f5c451]"
+              className="text-sm text-white/80 transition hover:text-[#f5c451]"
             >
               Events
             </a>
 
             <a
               href="#guidelines"
-              className="py-2 text-sm text-white/80 transition hover:text-[#f5c451]"
+              className="text-sm text-white/80 transition hover:text-[#f5c451]"
             >
               Guidelines
             </a>
 
             <a
               href="#contact"
-              className="py-2 text-sm text-white/80 transition hover:text-[#f5c451]"
+              className="text-sm text-white/80 transition hover:text-[#f5c451]"
             >
               Contact
             </a>
+
             <ScrollReveal delay={500}>
               <a
                 href="#registration"
@@ -153,14 +147,16 @@ function Home() {
           </div>
 
           {/* MOBILE REGISTER */}
-          <ScrollReveal delay={500}>
-          <a
-            href="#registration"
-            className="rounded-full bg-[#f6c653] px-5 py-2.5 text-sm font-semibold text-[#07111c] lg:hidden"
-          >
-            Register
-          </a>
-          </ScrollReveal>
+          <div className="ml-auto lg:hidden">
+            <ScrollReveal delay={500}>
+              <a
+                href="#registration"
+                className="rounded-full bg-[#f6c653] px-5 py-2.5 text-sm font-semibold text-[#07111c]"
+              >
+                Register
+              </a>
+            </ScrollReveal>
+          </div>
         </nav>
       </header>
 

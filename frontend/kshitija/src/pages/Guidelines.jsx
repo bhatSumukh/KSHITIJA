@@ -139,6 +139,75 @@ function Guidelines() {
               Participants are not allowed to disclose their college name during the fest
             </GuidelineItem>
 
+            <GuidelineItem>
+              Participants are expected to follow the
+              instructions given by the event
+              coordinators and organizers.
+            </GuidelineItem>
+
+               <GuidelineItem>
+              Select the correct college from the
+              college list while registering.
+            </GuidelineItem>
+
+             <GuidelineItem>
+              Provide valid faculty name, phone number
+              and email address.
+            </GuidelineItem>
+
+             <GuidelineItem>
+              Select the event carefully before entering
+              participant details.
+            </GuidelineItem>
+
+             <GuidelineItem>
+              Participant names and phone numbers must
+              be entered correctly.
+            </GuidelineItem>
+
+             <GuidelineItem>
+              A participant should not be registered
+              for multiple events where the event rules
+              prohibit such participation.
+            </GuidelineItem>
+
+             <GuidelineItem>
+              Participants must report to the designated
+              venue within the time specified by the
+              event coordinators.
+            </GuidelineItem>
+
+               <GuidelineItem>
+              Participants arriving after the specified
+              reporting time may be subject to the
+              rules of the respective event.
+            </GuidelineItem>
+
+            <GuidelineItem>
+              All participants are expected to maintain
+              respectful and responsible conduct
+              throughout the fest.
+            </GuidelineItem>
+
+             <GuidelineItem>
+              Misconduct, harassment, intimidation or
+              disruptive behaviour will not be
+              tolerated.
+            </GuidelineItem>
+
+               <GuidelineItem>
+              Participants must respect fellow
+              participants, volunteers, faculty,
+              organizers and judges.
+            </GuidelineItem>
+
+             <GuidelineItem>
+              Participants are responsible for their
+              personal belongings and equipment.
+            </GuidelineItem>
+
+            
+
           </GuidelineSection>
 
 

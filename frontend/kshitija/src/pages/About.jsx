@@ -194,13 +194,14 @@ const About = () => {
               Kshitija, meaning Horizon, returns for its second edition as a
               celebration of endless possibilities and new beginnings. <br></br>
               This year, with the theme “Yugmam”, Kshitija explores the coming
-              together of different eras, ideas, cultures, and perspectives. It
-              celebrates the connection between our rich heritage and the
+              together of different eras, ideas, cultures, and perspectives.{" "}
+              <br></br>
+              It celebrates the connection between our rich heritage and the
               ever-evolving modern world, bringing together students from
-              diverse backgrounds, interests and talents on one platform. As an
-              NSS fest, Kshitija goes beyond celebration, embracing the values
-              of service, leadership, teamwork, social responsibility, and youth
-              empowerment.
+              diverse backgrounds, interests and talents on one platform.{" "}
+              <br></br>As an NSS fest, Kshitija goes beyond celebration,
+              embracing the values of service, leadership, teamwork, social
+              responsibility, and youth empowerment.
             </p>
 
             {/* Button */}

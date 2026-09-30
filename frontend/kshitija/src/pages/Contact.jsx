@@ -201,7 +201,7 @@ function Contact() {
       {/* FOOTER */}
       <footer className="px-6 py-10 text-center">
         <p className="text-[9px] uppercase tracking-[0.35em] text-white/20">
-          KSHITIJA 2026 • NSS • POORNAPRAJNA COLLEGE
+          KSHITIJA 2026 • NSS • POORNAPRAJNA COLLEGE AUTONOMOUS
         </p>
 
         <p className="mt-3 text-[9px] uppercase tracking-[0.25em] text-[#e7b65a]/40">
