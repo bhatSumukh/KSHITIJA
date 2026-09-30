@@ -890,10 +890,7 @@ function Registration() {
                             <button
                               type="button"
                               onClick={() => addParticipant(event)}
-                              disabled={
-                                participants.length >= event.teamSize ||
-                                getTotalParticipants() >= 25
-                              }
+                              disabled={participants.length >= event.teamSize}
                               className="border border-[#e7b65a]/40 px-5 py-3 text-[9px] uppercase tracking-[0.2em] text-[#e7b65a] transition hover:bg-[#e7b65a] hover:text-[#020b14] disabled:cursor-not-allowed disabled:opacity-20"
                             >
                               + Add Participant
