@@ -16,8 +16,8 @@ function Home() {
   });
 
   useEffect(() => {
-    // Fest starts: October 9, 2026
-    const targetDate = new Date("2026-10-09T09:00:00+05:30").getTime();
+    // Fest starts: October 16, 2026
+    const targetDate = new Date("2026-10-16T09:00:00+05:30").getTime();
 
     const updateCountdown = () => {
       const now = new Date().getTime();
@@ -68,8 +68,9 @@ function Home() {
       <header className="fixed top-0 left-0 z-50 w-full">
         <nav className="mx-auto flex h-[72px] w-full items-center justify-between border-b border-white/10 bg-[#031426]/80 px-6 backdrop-blur-md lg:px-20">
           {/* NSS BRAND */}
-          <ScrollReveal delay={500}>
+          
             <div className="flex items-center gap-3">
+              <ScrollReveal delay={500}>
               <img
                 src={nsslogo}
                 alt="NSS Poornaprajna College"
@@ -94,8 +95,8 @@ function Home() {
                   UDUPI
                 </p>
               </div>
+              </ScrollReveal>
             </div>
-          </ScrollReveal>
 
           {/* CENTER BRAND */}
           {/* <div className="absolute left-1/2 hidden -translate-x-1/2 md:block">
@@ -285,7 +286,7 @@ function Home() {
             <div className="flex items-center gap-2">
               <span className="text-base text-[#f5c451]">◫</span>
 
-              <span className="text-white font-bold">OCT 9, 2026</span>
+              <span className="text-white font-bold">OCT 16, 2026</span>
             </div>
 
             <span className="hidden text-[#f5c451] sm:block">|</span>
