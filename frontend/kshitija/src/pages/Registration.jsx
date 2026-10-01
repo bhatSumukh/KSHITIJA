@@ -1000,14 +1000,6 @@ function Registration() {
                 {loading ? "Submitting..." : "Register Now"}
               </button>
             </div>
-
-            <button
-              type="submit"
-              disabled={loading || selectedEvents.length === 0}
-              className="mt-6 w-full border border-[#e7b65a] bg-[#e7b65a] px-10 py-4 text-[10px] uppercase tracking-[0.3em] text-[#020b14] transition duration-300 hover:bg-transparent hover:text-[#e7b65a] disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto"
-            >
-              {loading ? "Submitting..." : "Register Now"}
-            </button>
           </div>
         </form>
       </section>
