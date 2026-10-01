@@ -28,6 +28,7 @@ function Registration() {
   const [message, setMessage] = useState("");
 
   const [registrationSuccess, setRegistrationSuccess] = useState(false);
+  const [agreementAccepted, setAgreementAccepted] = useState(false);
 
   // --------------------------------------------------
   // FETCH COLLEGES
@@ -110,21 +111,25 @@ function Registration() {
     // -----------------------------------------------
 
     if (isSelected) {
-      setSelectedEvents((previous) =>
-        previous.filter((id) => id !== event._id),
-      );
+      setSelectedEvents((previous) => {
+        const updated = previous.filter((id) => id !== event._id);
+
+        // If no events remain selected, reset agreement
+        if (updated.length === 0) {
+          setAgreementAccepted(false);
+        }
+
+        return updated;
+      });
 
       setParticipantsByEvent((previous) => {
         const updated = { ...previous };
-
         delete updated[event._id];
-
         return updated;
       });
 
       return;
     }
-
     // -----------------------------------------------
     // EVENT SIZE VALIDATION
     // -----------------------------------------------
@@ -944,6 +949,58 @@ function Registration() {
               </p>
             </div>
 
+            {/* AGREEMENT + SUBMIT */}
+
+            <div className="mt-8 flex flex-col items-center border-t border-white/10 pt-8">
+              <div className="text-center">
+                <p className="text-[9px] uppercase tracking-[0.3em] text-white/25">
+                  Ready to participate?
+                </p>
+
+                <p className="mt-2 text-xs text-white/40">
+                  {selectedEvents.length}{" "}
+                  {selectedEvents.length === 1 ? "event" : "events"} selected •{" "}
+                  {getTotalParticipants()} participants
+                </p>
+              </div>
+
+              {/* AGREEMENT — ONLY WHEN EVENT IS SELECTED */}
+
+              {selectedEvents.length > 0 && (
+                <label
+                  htmlFor="registrationAgreement"
+                  className="mt-6 flex w-full max-w-2xl cursor-pointer items-start gap-3 border border-white/10 bg-[#071522] px-5 py-4 transition hover:border-[#e7b65a]/40"
+                >
+                  <input
+                    id="registrationAgreement"
+                    type="checkbox"
+                    checked={agreementAccepted}
+                    onChange={(e) => setAgreementAccepted(e.target.checked)}
+                    className="mt-1 h-4 w-4 shrink-0 cursor-pointer accent-[#e7b65a]"
+                  />
+
+                  <span className="text-left text-sm leading-6 text-white/70">
+                    I confirm that all participant details entered above are
+                    correct and complete. I understand that the information
+                    submitted will be used for the registration of my college
+                    and selected events.
+                  </span>
+                </label>
+              )}
+
+              {/* REGISTER BUTTON */}
+
+              <button
+                type="submit"
+                disabled={
+                  loading || selectedEvents.length === 0 || !agreementAccepted
+                }
+                className="mt-6 w-full border border-[#e7b65a] bg-[#e7b65a] px-10 py-4 text-[10px] uppercase tracking-[0.3em] text-[#020b14] transition duration-300 hover:bg-transparent hover:text-[#e7b65a] disabled:cursor-not-allowed disabled:opacity-40 sm:w-auto"
+              >
+                {loading ? "Submitting..." : "Register Now"}
+              </button>
+            </div>
+
             <button
               type="submit"
               disabled={loading || selectedEvents.length === 0}
@@ -951,11 +1008,6 @@ function Registration() {
             >
               {loading ? "Submitting..." : "Register Now"}
             </button>
-
-            <p className="mt-4 max-w-lg text-center text-[15px] leading-5 text-white/80">
-              Please ensure that all participant details entered above are
-              correct before submitting the registration.
-            </p>
           </div>
         </form>
       </section>
@@ -966,7 +1018,7 @@ function Registration() {
 
       <footer className="border-t border-white/5 px-6 py-10 text-center">
         <p className="text-[9px] uppercase tracking-[0.35em] text-white/20">
-          KSHITIJA 2026 • NSS • POORNAPRAJNA COLLEGE
+          KSHITIJA 2026 • NSS • POORNAPRAJNA COLLEGE AUTONOMOUS, UDUPI
         </p>
 
         <p className="mt-3 text-[9px] uppercase tracking-[0.25em] text-[#e7b65a]/40">
