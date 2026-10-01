@@ -181,28 +181,42 @@ const About = () => {
             </ScrollReveal>
 
             {/* Description */}
-            <p
+            <div
               className="
-           text-[13px]
-            leading-6
-            text-white
-            sm:text-base
-            sm:leading-7
-            text-base
-        "
+    text-[13px]
+    leading-6
+    text-white
+    sm:text-base
+    sm:leading-7
+  "
             >
-              Kshitija, meaning Horizon, returns for its second edition as a
-              celebration of endless possibilities and new beginnings. <br></br>
-              This year, with the theme “Yugmam”, Kshitija explores the coming
-              together of different eras, ideas, cultures, and perspectives.{" "}
-              <br></br>
-              It celebrates the connection between our rich heritage and the
-              ever-evolving modern world, bringing together students from
-              diverse backgrounds, interests and talents on one platform.{" "}
-              <br></br>As an NSS fest, Kshitija goes beyond celebration,
-              embracing the values of service, leadership, teamwork, social
-              responsibility, and youth empowerment.
-            </p>
+              <p>
+                Kshitija, meaning{" "}
+                <span className="text-[#f5c451]">Horizon</span>, returns for its
+                second edition as a celebration of endless possibilities and new
+                beginnings.
+              </p>
+
+              <p className="mt-5">
+                This year, with the theme{" "}
+                <span className="text-[#f5c451]">“Yugmam”</span>, Kshitija
+                explores the coming together of different eras, ideas, cultures,
+                and perspectives.
+              </p>
+
+              <p className="mt-5">
+                It celebrates the connection between our rich heritage and the
+                ever-evolving modern world, bringing together students from
+                diverse backgrounds, interests, and talents on one platform.
+              </p>
+
+              <p className="mt-5">
+                As an <span className="text-[#f5c451]">NSS fest</span>, Kshitija
+                goes beyond celebration, embracing the values of service,
+                leadership, teamwork, social responsibility, and youth
+                empowerment.
+              </p>
+            </div>
 
             {/* Button */}
             <ScrollReveal delay={300}>
@@ -412,63 +426,36 @@ const About = () => {
              pairing. Now just w-full so it fills the parent above,
              which is the thing that actually controls the width.
       ========================== */}
-            <div className="mt-5 w-full sm:mt-9">
-              <p
-                className="
-            text-[13px]
-            leading-6
-            text-white
-            sm:text-base
-            sm:leading-7
-            text-base
-          "
-              >
-                Poornaprajna College, popularly known as PPC, is situated in a
-                vast green campus at the heart of Udupi city. It is at a short
-                distance of 1 KM from Udupi Bus Stand, 4 KMs from Udupi Railway
-                Station and about 45 KMs from Mangalore Air Port.<br></br>{" "}
-                Poornaprajna College is one of the educational institutions run
-                by Udupi Sri Admar Mutt Education Council formerly headed by H.
-                H. Sri Sri Vibudhesha Theertha Swamiji of Sri Admar Mutt. Now,
-                the Council is functioning under the leadership of H. H. Sri Sri
-                Eshapriya Theertha Swamiji of Sri Admar Mutt. Poornaprajna
-                College was founded in 1960 by the Swamijis of eight Mathas of
-                Udupi. But, in February 1962, with a view to streamline the
-                day-to-day working of the institution, its maintenance and
-                governance was handed over to Admar Matha Education Council, a
-                registered society functioning under the leadership of H. H. Sri
-                Sri Vibudhesha Theertha Swamiji of Admar Matha. Now, the Council
-                is functioning under the leadership of H. H. Sri Sri Vishwapriya
-                Theertha Swamiji of Sri Admar Matha. It has now been handed over
-                to H.H. Sri Sri Eeshapriya Theertha Swamiji.<br></br> ABOUT THE
-                FEST Poornaprajna College (Autonomous), Udupi is pleased to
-                organize State level Intercollegiate fest "PRAJNA-2027" on,
-                2027, at PPC campus, PRAJNA-2027 is a splendid platform to
-                showcase students academical as well as cultural talents.
-                <br></br> Poornaprajna College popularly known as PPC. It is
-                located in the heart of Udupi city. Having a vast green campus
-                has given more exposure to cultural education. Poornaprajna
-                College Udupi is under the administration of Shree Adamaru Matha
-                Educational Institutions. It was established by Sri Sri
-                Vibudhesha Theertha Sripada of Sri Adamaru Mutha and proceeding
-                to Sri Sri Vishwapriya Theertha Sripada, it is currently
-                functioning under the chairmanship of Sri Sri Ishapriya Sripada.
+            <div
+              className="  text-[13px]
+    leading-6
+    text-white
+    sm:text-base
+    sm:leading-7"
+            >
+              <p>
+                Poornaprajna College, popularly known as PPC, is situated on a
+                vast green campus in the heart of Udupi city. It is located just
+                1 km from the Udupi Bus Stand, 4 km from the Udupi Railway
+                Station, and approximately 45 km from Mangalore Airport.
               </p>
 
-              <p
-                className="
-            mt-4
-            hidden
-            text-sm
-            leading-7
-            text-white
+              <p>
+                Poornaprajna College is one of the educational institutions
+                managed by the Udupi Sri Admar Mutt Education Council. The
+                college was founded in 1960 by the Swamijis of the eight Mathas
+                of Udupi. In February 1962, the maintenance and governance of
+                the institution were handed over to the Admar Matha Education
+                Council, a registered society functioning under the leadership
+                of the Swamijis of Sri Admar Mutt.
+              </p>
 
-            sm:block
-          "
-              >
-                The college strives to create an environment where students can
-                grow academically, culturally and socially, while developing the
-                values and skills needed to contribute meaningfully to society.
+              <p>
+                The institution has continued to develop under the guidance of
+                the Admar Mutt Education Council and its spiritual leadership.
+                Today, Poornaprajna College continues its commitment to academic
+                and cultural education, supported by its spacious and green
+                campus in Udupi.
               </p>
             </div>
 
@@ -718,44 +705,40 @@ const About = () => {
           -- WIDTH FIX: w-full so it fills the widened parent.
       ========================== */}
             <div className="mt-5 w-full sm:mt-6">
-              <p
+              <div
                 className="
-            text-[13px]
-            leading-6
-            text-white
-
-            sm:text-sm
-            sm:leading-7
-          "
+    text-[13px]
+    leading-6
+    text-white
+    sm:text-base
+    sm:leading-7
+  "
               >
-                The National Service Scheme encourages young people to
-                participate in community service and contribute meaningfully to
-                society.
-              </p>
+                <p>
+                  The National Service Scheme encourages young people to
+                  participate in community service and contribute meaningfully
+                  to society. Its motto,
+                  <span className="text-[#f5c451]"> “Not Me But You”</span>,
+                  reflects its emphasis on service, responsibility, and the
+                  development of students through community engagement.
+                </p>
 
-              <p
-                className="
-             text-[13px]
-            leading-6
-            text-white
-            sm:text-base
-            sm:leading-7
-            text-base
-          "
-              >
-                The national service scheme is an indian government sector
-                public service program conducted by the ministry of youth
-                affairs and sports of government of india the aim of nss is the
-                development of the personality of students through community
-                service with the motto “not me but you”. <br></br>At present
-                there are 2 nss units extending their service in poornaprajna
-                college udupi with strength of 210 volunteers the purpose of the
-                units is to provide students with the experience of social
-                service and personality development this scheme conducts daily
-                activities weekend activities aware programs one day camp annual
-                special camp etc at present mrs suparna and dr nagraj g p are
-                the nss program officers of poornaprajna college.
-              </p>
+                <p className="mt-5">
+                  At Poornaprajna College, Udupi, there are currently two NSS
+                  units with a strength of 270+ volunteers. The units provide
+                  students with opportunities to gain practical experience in
+                  social service while developing their personality, leadership,
+                  and sense of social responsibility.
+                </p>
+
+                <p className="mt-5 mr-5">
+                  The NSS units conduct a range of activities throughout the
+                  year, including daily activities, weekend activities,
+                  awareness programmes, one-day camps, and annual special camps.
+                  At present, Mrs. Suparna and Dr. Nagraj GP serve as the NSS
+                  Programme Officers of Poornaprajna College.
+                </p>
+              </div>
             </div>
 
             {/* =========================

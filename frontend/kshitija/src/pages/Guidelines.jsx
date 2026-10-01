@@ -171,11 +171,11 @@ function Guidelines() {
               prohibit such participation.
             </GuidelineItem>
 
-             <GuidelineItem>
+             {/* <GuidelineItem>
               Participants must report to the designated
               venue within the time specified by the
               event coordinators.
-            </GuidelineItem>
+            </GuidelineItem> */}
 
                <GuidelineItem>
               Participants arriving after the specified
