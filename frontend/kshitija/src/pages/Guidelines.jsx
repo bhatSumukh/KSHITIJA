@@ -4,99 +4,76 @@ import ScrollReveal from "../components/scrollReveal";
 function Guidelines() {
   return (
     <main className="min-h-screen bg-[#020b14] text-white">
-
       {/* =====================================================
           HERO
       ===================================================== */}
 
       <section className="relative overflow-hidden border-b border-[#e7b65a]/20 px-6 pb-20 pt-32 sm:px-10 lg:px-20">
-
         {/* Background glow */}
 
         <div className="pointer-events-none absolute inset-0">
-
           <div className="absolute left-1/2 top-0 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-[#e7b65a]/5 blur-[140px]" />
 
           <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-[#0c6470]/10 blur-[120px]" />
-
         </div>
-
 
         <div className="relative mx-auto max-w-7xl">
           <ScrollReveal delay={300}>
-
-          <p className="text-[10px] uppercase tracking-[0.5em] text-[#e7b65a]">
-            KSHITIJA 2026
-          </p>
+            <p className="text-[10px] uppercase tracking-[0.5em] text-[#e7b65a]">
+              KSHITIJA 2026
+            </p>
           </ScrollReveal>
 
-        <ScrollReveal delay={500}>
-          <h1 className="mt-5 max-w-4xl font-serif text-5xl leading-[0.95] text-[#f2c873] sm:text-7xl lg:text-8xl">
-            PARTICIPANT
-            <br />
-            GUIDELINES
-          </h1>
+          <ScrollReveal delay={500}>
+            <h1 className="mt-5 max-w-4xl font-serif text-5xl leading-[0.95] text-[#f2c873] sm:text-7xl lg:text-8xl">
+              PARTICIPANT
+              <br />
+              GUIDELINES
+            </h1>
           </ScrollReveal>
 
           <div className="mt-8 max-w-2xl">
-
             <p className="text-sm leading-7 text-white/50 sm:text-base">
-              Everything participating colleges,
-              faculty coordinators and participants
-              need to know before registering for
-              Kshithija.
+              Everything participating colleges, faculty coordinators and
+              participants need to know before registering for Kshithija.
             </p>
 
             {/* <p className="mt-4 text-xs uppercase tracking-[0.25em] text-[#e7b65a]/70">
               YUGMAM — WHERE TRADITION MEETS TOMORROW
             </p> */}
-
           </div>
-
         </div>
-
       </section>
-
 
       {/* =====================================================
           CONTENT
       ===================================================== */}
 
       <section className="px-6 py-16 sm:px-10 lg:px-20">
-
         <div className="mx-auto max-w-5xl">
-
-
           {/* =================================================
               INTRO
           ================================================= */}
 
           <div className="mb-16 border border-[#e7b65a]/20 bg-[#071522]/70 p-7 sm:p-10">
+            <ScrollReveal delay={500}>
+              <p className="text-[9px] uppercase tracking-[0.35em] text-[#e7b65a]">
+                BEFORE YOU REGISTER
+              </p>
 
-          <ScrollReveal delay={500}>
-
-            <p className="text-[9px] uppercase tracking-[0.35em] text-[#e7b65a]">
-              BEFORE YOU REGISTER
-            </p>
-
-            <h2 className="mt-3 font-serif text-3xl text-[#f2c873]">
-              Please Read Carefully
-            </h2>
+              <h2 className="mt-3 font-serif text-3xl text-[#f2c873]">
+                Please Read Carefully
+              </h2>
             </ScrollReveal>
 
             <p className="mt-5 text-sm leading-7 text-white/50">
-              Participating colleges are requested to
-              read the complete guidelines before
-              submitting their registration. The
-              faculty coordinator is responsible for
-              ensuring that the information submitted
-              during registration is accurate and that
-              all participating students are aware of
-              the applicable event rules.
+              Participating colleges are requested to read the complete
+              guidelines before submitting their registration. The faculty
+              coordinator is responsible for ensuring that the information
+              submitted during registration is accurate and that all
+              participating students are aware of the applicable event rules.
             </p>
-
           </div>
-
 
           {/* =================================================
               01 GENERAL
@@ -106,77 +83,76 @@ function Guidelines() {
             // number="01"
             title="General Guidelines"
           >
+            <GuidelineItem>The fest is open to only NSS students</GuidelineItem>
 
             <GuidelineItem>
-              The fest is open to only NSS students
-            </GuidelineItem>
-
-            <GuidelineItem>
-              Only one team per college is allowed to participate in each event. A team should consist of 25 students per college.
+              Only one team per college is allowed to participate in each event.
+              A team should consist of 25 students per college.
             </GuidelineItem>
 
             <GuidelineItem>
-              Participants must carry a valid bonafide certificate and college id with them
+              Only 3 students of final year are allowed to participate
             </GuidelineItem>
 
             <GuidelineItem>
-              Colleges should be present at 8:00 am for registration 
+              Avoid Sensitive Topic like caste, religion, or political matters,
+              and maintain respect.
             </GuidelineItem>
 
             <GuidelineItem>
-              Only 3 students of final year are allowed to participate 
+              Participants must carry a valid bonafide certificate and college
+              id with them
             </GuidelineItem>
 
             <GuidelineItem>
-              Judges decision will be final
+              Colleges should be present at 8:00 am for registration
+            </GuidelineItem>
+
+            <GuidelineItem>Judges decision will be final</GuidelineItem>
+
+            <GuidelineItem>
+              Participants participating in escape room ,debate and reel making
+              are not allowed to participate in other events.
             </GuidelineItem>
 
             <GuidelineItem>
-              Participants participating in escape room ,debate and reel making are not allowed to participate in other events.
+              Participants are not allowed to disclose their college name during
+              the fest
             </GuidelineItem>
 
             <GuidelineItem>
-              Participants are not allowed to disclose their college name during the fest
+              Participants are expected to follow the instructions given by the
+              event coordinators and organizers.
             </GuidelineItem>
 
             <GuidelineItem>
-              Participants are expected to follow the
-              instructions given by the event
-              coordinators and organizers.
+              Select the correct college from the college list while
+              registering.
             </GuidelineItem>
 
-               <GuidelineItem>
-              Select the correct college from the
-              college list while registering.
+            <GuidelineItem>
+              Provide valid faculty name, phone number and email address.
             </GuidelineItem>
 
-             <GuidelineItem>
-              Provide valid faculty name, phone number
-              and email address.
+            <GuidelineItem>
+              Select the event carefully before entering participant details.
             </GuidelineItem>
 
-             <GuidelineItem>
-              Select the event carefully before entering
-              participant details.
+            <GuidelineItem>
+              Participant names and phone numbers must be entered correctly.
             </GuidelineItem>
 
-             <GuidelineItem>
-              Participant names and phone numbers must
-              be entered correctly.
+            <GuidelineItem>
+              A participant should not be registered for multiple events where
+              the event rules prohibit such participation.
             </GuidelineItem>
 
-             <GuidelineItem>
-              A participant should not be registered
-              for multiple events where the event rules
-              prohibit such participation.
-            </GuidelineItem>
-
-             {/* <GuidelineItem>
+            {/* <GuidelineItem>
               Participants must report to the designated
               venue within the time specified by the
               event coordinators.
             </GuidelineItem> */}
-{/* 
+            {/* 
                <GuidelineItem>
               Participants arriving after the specified
               reporting time may be subject to the
@@ -184,65 +160,43 @@ function Guidelines() {
             </GuidelineItem> */}
 
             <GuidelineItem>
-              All participants are expected to maintain
-              respectful and responsible conduct
-              throughout the fest.
-            </GuidelineItem>
-
-             <GuidelineItem>
-              Misconduct, harassment, intimidation or
-              disruptive behaviour will not be
-              tolerated.
-            </GuidelineItem>
-
-               <GuidelineItem>
-              Participants must respect fellow
-              participants, volunteers, faculty,
-              organizers and judges.
-            </GuidelineItem>
-
-             <GuidelineItem>
-              Participants are responsible for their
-              personal belongings and equipment.
+              All participants are expected to maintain respectful and
+              responsible conduct throughout the fest.
             </GuidelineItem>
 
             <GuidelineItem>
-             Avoid Sensitive Topic,  Avoid discussions, content, or performances related to caste, religion, or political matters, and maintain respect and inclusivity at all times.
+              Misconduct, harassment, intimidation or disruptive behaviour will
+              not be tolerated.
             </GuidelineItem>
 
-            
+            <GuidelineItem>
+              Participants must respect fellow participants, volunteers,
+              faculty, organizers and judges.
+            </GuidelineItem>
 
+            <GuidelineItem>
+              Participants are responsible for their personal belongings and
+              equipment.
+            </GuidelineItem>
           </GuidelineSection>
-
-
-</div>
-
+        </div>
       </section>
-
 
       {/* =====================================================
           FOOTER
       ===================================================== */}
-
     </main>
   );
 }
-
 
 /* =========================================================
    REUSABLE GUIDELINE SECTION
 ========================================================= */
 
-function GuidelineSection({
-  number,
-  title,
-  children,
-}) {
+function GuidelineSection({ number, title, children }) {
   return (
     <section className="border-t border-white/10 py-10">
-
       <div className="grid gap-6 md:grid-cols-[100px_1fr]">
-
         {/* Number */}
 
         <div>
@@ -251,27 +205,17 @@ function GuidelineSection({
           </span>
         </div>
 
-
         {/* Content */}
 
         <div>
+          <h2 className="font-serif text-3xl text-[#f2c873]">{title}</h2>
 
-          <h2 className="font-serif text-3xl text-[#f2c873]">
-            {title}
-          </h2>
-
-          <div className="mt-7 space-y-4">
-            {children}
-          </div>
-
+          <div className="mt-7 space-y-4">{children}</div>
         </div>
-
       </div>
-
     </section>
   );
 }
-
 
 /* =========================================================
    GUIDELINE ITEM
@@ -280,15 +224,9 @@ function GuidelineSection({
 function GuidelineItem({ children }) {
   return (
     <div className="flex gap-4 border border-white/5 bg-[#071522]/60 p-5">
+      <span className="mt-1 text-[#e7b65a]">◆</span>
 
-      <span className="mt-1 text-[#e7b65a]">
-        ◆
-      </span>
-
-      <p className="text-sm leading-7 text-white/50">
-        {children}
-      </p>
-
+      <p className="text-sm leading-7 text-white/50">{children}</p>
     </div>
   );
 }

@@ -37,8 +37,8 @@ const events = [
 
   {
     id: 3,
-    name: "BHAVATARANGA",
-    slug: "bhavataranga",
+    name: "BHAVAGEETHE",
+    slug: "bhavageethe",
     category: "SINGING",
     description:
       "Let your voice bridge generations with melodies that connect the past, present, and future.",
@@ -81,7 +81,7 @@ const events = [
 
   {
     id: 7,
-    name: "JANAVANI",
+    name: "JANVANI",
     slug: "janavani",
     category: "DEBATE",
     description:

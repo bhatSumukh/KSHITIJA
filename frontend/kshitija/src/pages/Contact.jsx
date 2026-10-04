@@ -34,7 +34,7 @@ const coordinators = [
   },
   {
     role: "Faculty Coordinator",
-    name: "Mr.Nagraj GP",
+    name: "Dr.Nagaraja GP",
     phone: "+91 9902502586",
     email: "faculty2@example.com",
   },
@@ -201,7 +201,7 @@ function Contact() {
       {/* FOOTER */}
       <footer className="px-6 py-10 text-center">
         <p className="text-[9px] uppercase tracking-[0.35em] text-white/20">
-          KSHITIJA 2026 • NSS • POORNAPRAJNA COLLEGE AUTONOMOUS
+          KSHITIJA 2026 • NSS • POORNAPRAJNA COLLEGE AUTONOMOUS UDUPI
         </p>
 
         {/* <p className="mt-3 text-[9px] uppercase tracking-[0.25em] text-[#e7b65a]/40">

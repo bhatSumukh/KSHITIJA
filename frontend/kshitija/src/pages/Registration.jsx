@@ -541,7 +541,7 @@ function Registration() {
 
         <div className="relative mx-auto max-w-6xl text-center">
           <p className="text-[10px] uppercase tracking-[0.5em] text-[#e7b65a]">
-            KSHITIJA • YUGMAM
+            KSHITIJA 
           </p>
 
           <h1 className="mt-6 font-serif text-5xl text-[#f2c873] sm:text-7xl">

@@ -6,7 +6,7 @@ const event = {
     "Bring stories to life through powerful acting, social themes, and creative storytelling.",
 
   guidelines: [
-    "The maximum number of participants is 7-10, 8+2 min.",
+    "The maximum number of participants is 7-10 members and each team will get 8+2 min.",
 
     " Participants must perform in Kannada only.",
 

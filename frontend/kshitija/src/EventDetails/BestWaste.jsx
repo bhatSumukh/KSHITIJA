@@ -18,11 +18,11 @@ const event = {
   },
 
   studentCoordinator1: {
-    name: "Trupthi",
+    name: "Thrupthi",
     phone: "+91 7676034428",
   },
   studentCoordinator2: {
-    name: "Manvith",
+    name: "Shreerama",
     phone: "+91 9481837253",
   },
   staffCoordinator: {
