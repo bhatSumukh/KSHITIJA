@@ -18,8 +18,8 @@ const events = [
   },
 
   {
-    name: "BHAVATARANGA",
-    slug: "bhavataranga",
+    name: "BHAVAGEETHE",
+    slug: "bhavageethe",
     type: "Singing",
     minTeamSize: 4,
     teamSize: 6,
@@ -54,8 +54,8 @@ const events = [
   },
 
   {
-    name: "JANAVANI",
-    slug: "janavani",
+    name: "JANVANI",
+    slug: "janvani",
     type: "Debate",
     minTeamSize: 2,
     teamSize: 2,

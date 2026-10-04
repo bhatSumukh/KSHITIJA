@@ -79,7 +79,7 @@ function Home() {
               <img
                 src={ppclogo}
                 alt="Poornaprajna College Udupi"
-                className="h-13 w-13 object-contain"
+                className="h-10 w-10 object-contain"
               />
 
               <div className="hidden leading-tight sm:block">
