@@ -6,13 +6,23 @@ const event = {
     "Let your voice bridge generations with melodies that connect the past, present, and future.",
 
   guidelines: [
-    "Each team should consist minimum of 4 members and maximum of 6 members",
+    "4–6 members per team, including instrumentalists.",
 
-    "Time limit - 4+1",
+    "Kannada Bhavageethe only.",
 
-    "Instrumentalist have to be from the respective college",
+    "Only non-electrical instruments are allowed.",
 
-    "Lyrics cannot be referred,it should be composed by your own",
+    "Lyrics must not contain references to caste or religion.",
+
+    "Lyrics/reference materials and mobile phones are not allowed during performance.",
+
+    "Vulgar or offensive content is strictly prohibited.",
+
+    "Creative musical innovations and original arrangements are encouraged.",
+
+    "Judgement based on voice clarity, coordination, rhythm, musicality and presentation.",
+
+    "Judges’ decision shall be final and binding."
   ],
 
   timing: {
