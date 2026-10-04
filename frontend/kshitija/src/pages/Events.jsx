@@ -19,7 +19,7 @@ const events = [
     slug: "yugantara",
     category: "STREET PLAY",
     description:
-      "Bring stories to life through powerful acting, social themes, and creative storytelling.",
+      "Yugantara means “the transition between eras” — symbolizing change, evolution, and the journey from one age to another.",
     teamSize: "7-10 Members",
     image: streetplay,
   },
@@ -30,7 +30,7 @@ const events = [
     slug: "nariparivartanam",
     category: "DANCE",
     description:
-      "Express the unity of tradition and modernity through rhythm, movement, and choreography.",
+      "Nari Parivartanam means “the transformation of women.” It represents the strength, evolution, and empowerment of women through change and expression.",
     teamSize: "7-10 Members",
     image: dance,
   },
@@ -52,7 +52,7 @@ const events = [
     slug: "antariksha",
     category: "FACE PAINTING",
     description:
-      "Turn faces into canvases and create imaginative art inspired by your creativity.",
+      "Antariksha means “space” or “cosmos.” It represents the vastness, mystery, and beauty of the universe.",
     teamSize: "2 Members",
     image: facepainting,
   },
@@ -63,7 +63,7 @@ const events = [
     slug: "rupantara",
     category: "BEST OUT OF WASTE",
     description:
-      "Transform discarded materials into creative, meaningful, and visually striking art.",
+      "Rūpāntara means “transformation” or “change of form.” It represents turning ordinary materials into something creative, meaningful, and new.",
     teamSize: "2 Members",
     image: bestwest,
   },
@@ -74,7 +74,7 @@ const events = [
     slug: "rahasyadvaram",
     category: "ESCAPE ROOM",
     description:
-      "Solve clues, crack puzzles, and work together to escape before time runs out.",
+      "Rahasya Dvāram means “the mysterious door.” It represents a journey of mystery, clues, challenges, and discovery.",
     teamSize: "2 Members",
     image: escaperoom,
   },
@@ -85,7 +85,7 @@ const events = [
     slug: "janavani",
     category: "DEBATE",
     description:
-      "Challenge ideas, defend your perspective, and engage in a battle of words and reasoning.",
+      "Jan Vāṇī means “the voice of the people.” It represents expressing opinions, perspectives, and ideas through discussion and debate.",
     teamSize: "2 Members",
     image: debate,
   },
@@ -96,7 +96,7 @@ const events = [
     slug: "kshanachitra",
     category: "REEL MAKING",
     description:
-      "Capture the spirit of Yugmam through a short, creative, and visually engaging reel.",
+      "Kṣhaṇa Chitra means “a picture of a moment.” It represents capturing a moment, idea, or story creatively through visual media.",
     teamSize: "1 Member",
     image: reelmaking,
   },

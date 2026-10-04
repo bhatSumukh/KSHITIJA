@@ -47,9 +47,9 @@ function Guidelines() {
               Kshithija.
             </p>
 
-            <p className="mt-4 text-xs uppercase tracking-[0.25em] text-[#e7b65a]/70">
+            {/* <p className="mt-4 text-xs uppercase tracking-[0.25em] text-[#e7b65a]/70">
               YUGMAM — WHERE TRADITION MEETS TOMORROW
-            </p>
+            </p> */}
 
           </div>
 
