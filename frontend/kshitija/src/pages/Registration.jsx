@@ -937,7 +937,7 @@ function Registration() {
           ================================================= */}
 
           <div className="mt-8 flex flex-col items-center border-t border-white/10 pt-8">
-            <div className="text-center">
+            {/* <div className="text-center">
               <p className="text-[9px] uppercase tracking-[0.3em] text-white/25">
                 Ready to participate?
               </p>
@@ -947,7 +947,7 @@ function Registration() {
                 {selectedEvents.length === 1 ? "event" : "events"} selected •{" "}
                 {getTotalParticipants()} participants
               </p>
-            </div>
+            </div> */}
 
             {/* AGREEMENT + SUBMIT */}
 
@@ -1013,9 +1013,9 @@ function Registration() {
           KSHITIJA 2026 • NSS • POORNAPRAJNA COLLEGE AUTONOMOUS, UDUPI
         </p>
 
-        <p className="mt-3 text-[9px] uppercase tracking-[0.25em] text-[#e7b65a]/40">
+        {/* <p className="mt-3 text-[9px] uppercase tracking-[0.25em] text-[#e7b65a]/40">
           YUGMAM — WHERE TRADITION MEETS TOMORROW
-        </p>
+        </p> */}
       </footer>
     </main>
   );

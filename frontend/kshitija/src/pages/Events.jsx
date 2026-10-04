@@ -81,8 +81,8 @@ const events = [
 
   {
     id: 7,
-    name: "JANSABHA",
-    slug: "janasabha",
+    name: "JANAVANI",
+    slug: "janavani",
     category: "DEBATE",
     description:
       "Challenge ideas, defend your perspective, and engage in a battle of words and reasoning.",

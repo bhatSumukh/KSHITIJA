@@ -49,9 +49,9 @@ const About = () => {
             PEOPLE × PURPOSE × POSSIBILITIES
           </p>
 
-          <p className="mt-8 text-xs tracking-[0.3em] text-[#e7b65a]">
+          {/* <p className="mt-8 text-xs tracking-[0.3em] text-[#e7b65a]">
             YUGMAM — WHERE TRADITION MEETS TOMORROW
-          </p>
+          </p> */}
         </div>
 
         {/* Bottom fade */}
@@ -152,7 +152,7 @@ const About = () => {
           lg:text-7xl
         "
               >
-                KSHITIJA - YUGMAM
+                KSHITIJA
               </h3>
             </ScrollReveal>
 
@@ -197,12 +197,12 @@ const About = () => {
                 beginnings.
               </p>
 
-              <p className="mt-5">
+              {/* <p className="mt-5">
                 This year, with the theme{" "}
                 <span className="text-[#f5c451]">“Yugmam”</span>, Kshitija
                 explores the coming together of different eras, ideas, cultures,
                 and perspectives.
-              </p>
+              </p> */}
 
               <p className="mt-5">
                 It celebrates the connection between our rich heritage and the

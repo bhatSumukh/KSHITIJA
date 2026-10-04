@@ -266,12 +266,12 @@ function Home() {
             <span className="h-[1px] flex-1 bg-gradient-to-l from-transparent to-white/50" />
           </div>
 
-          {/* YUGMAM */}
+          {/* YUGMAM
           <ScrollReveal delay={300}>
             <h2 className="mt-3 font-['Samarkan'] text-3xl tracking-[0.3em] text-white sm:text-3xl md:text-4xl">
               YUGMAM
             </h2>
-          </ScrollReveal>
+          </ScrollReveal> */}
 
           <p className="font-semibold mt-2 text-[10px] uppercase tracking-[0.38em] text-white sm:text-xs">
             WHERE TRADITION MEETS TOMORROW

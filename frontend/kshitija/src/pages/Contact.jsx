@@ -54,7 +54,7 @@ function Contact() {
 
         <div className="relative z-10 text-center">
           <p className="text-[10px] uppercase tracking-[0.5em] text-[#e7b65a]">
-            KSHITIJA • YUGMAM
+            KSHITIJA
           </p>
 
           <h1 className="mt-6 font-serif text-5xl text-[#f2c873] sm:text-7xl">
@@ -204,9 +204,9 @@ function Contact() {
           KSHITIJA 2026 • NSS • POORNAPRAJNA COLLEGE AUTONOMOUS
         </p>
 
-        <p className="mt-3 text-[9px] uppercase tracking-[0.25em] text-[#e7b65a]/40">
+        {/* <p className="mt-3 text-[9px] uppercase tracking-[0.25em] text-[#e7b65a]/40">
           YUGMAM — WHERE TRADITION MEETS TOMORROW
-        </p>
+        </p> */}
       </footer>
     </main>
   );

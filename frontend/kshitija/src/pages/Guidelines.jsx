@@ -176,12 +176,12 @@ function Guidelines() {
               venue within the time specified by the
               event coordinators.
             </GuidelineItem> */}
-
+{/* 
                <GuidelineItem>
               Participants arriving after the specified
               reporting time may be subject to the
               rules of the respective event.
-            </GuidelineItem>
+            </GuidelineItem> */}
 
             <GuidelineItem>
               All participants are expected to maintain
