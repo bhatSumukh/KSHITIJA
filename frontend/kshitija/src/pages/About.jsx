@@ -735,7 +735,7 @@ const About = () => {
                   The NSS units conduct a range of activities throughout the
                   year, including daily activities, weekend activities,
                   awareness programmes, one-day camps, and annual special camps.
-                  At present, Mrs. Suparna and Dr. Nagraj GP serve as the NSS
+                  At present, Mrs. Suparna and Dr. Nagaraja GP serve as the NSS
                   Programme Officers of Poornaprajna College.
                 </p>
               </div>
