@@ -54,8 +54,8 @@ const events = [
   },
 
   {
-    name: "JANSABHA",
-    slug: "jansabha",
+    name: "JANAVANI",
+    slug: "janavani",
     type: "Debate",
     minTeamSize: 2,
     teamSize: 2,

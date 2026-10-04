@@ -6,93 +6,92 @@ const colleges = [
     collegeName: "Nitte engineering",
   },
   {
-    collegeName: "UPMC",
+    collegeName: "Upendrapai Memorial College",
   },
-    {
-    collegeName: "MGM",
+  {
+    collegeName: "Mahatma Gandhi Memorial College",
   },
-    {
-    collegeName: "Trisha",
+  {
+    collegeName: "Trisha College",
   },
-    {
-    collegeName: "St Mary's",
+  {
+    collegeName: "St Mary's College",
   },
-    {
-    collegeName: "Padava",
+  {
+    collegeName: "Padava College",
   },
-    {
-    collegeName: "PPC Evening",
+  {
+    collegeName: "Poornaprajna Evening College",
   },
-    {
-    collegeName: "BB Hegde",
+  {
+    collegeName: "Dr.B B Hegde First Grade College",
   },
-    {
-    collegeName: "GFGC (Hebri)",
+  {
+    collegeName: "Government First Grade College, Hebri",
   },
-    {
-    collegeName: "GFGC (Hiridka)",
+  {
+    collegeName: "Government First Grade College, Hiriyadaka",
   },
-    {
-    collegeName: "GFGC (Tenkanadiyur)",
+  {
+    collegeName: "Government First Grade College, Tenkanadiyur",
   },
-    {
-    collegeName: "GFGC (Shankaranaryana)",
+  {
+    collegeName: "Government First Grade College, Shankaranaryana",
   },
-    {
-    collegeName: "GFGC (Karkala)",
+  {
+    collegeName: "Government First Grade College, Karkala",
   },
-      {
-    collegeName: "GFGC (Kaup)",
+  {
+    collegeName: "Government First Grade College, Kaup",
   },
-    {
-    collegeName: "SMVITM",
+  {
+    collegeName: "Shri Madhwa Vadiraja Institute of Technology and Management",
   },
-    {
-    collegeName: "Bhandarkar's",
+  {
+    collegeName: "Bhandarkars' Arts and Science College, Kundapura",
   },
-    {
-    collegeName: "MGM Evening",
+  {
+    collegeName: "Mahatma Gandhi Memorial Evening College",
   },
-    {
-    collegeName: "UGI",
+  {
+    collegeName: "Udupi Group of Institution",
   },
-    {
-    collegeName: "Womens College (Ajarkadu)",
+  {
+    collegeName: "Womens College, Ajarkadu",
   },
-      {
-    collegeName: "SDM Law",
+  {
+    collegeName: "Shree Dharmasthala Manjunatheshwara Law College",
   },
-      {
-    collegeName: "SDM Business",
+  {
+    collegeName: "Shree Dharmasthala Manjunatheshwara Business College",
   },
-      {
-    collegeName: "Roshni Nilaya",
+  {
+    collegeName: "School of Socail Work, Roshni Nilaya, Mangaluru",
   },
-      {
-    collegeName: "Govind Das",
+  {
+    collegeName: "Govinda Dasa College, Manglore",
   },
-      {
-    collegeName: "Canara College",
+  {
+    collegeName: "Canara College, Manglore",
   },
-      {
-    collegeName: "AGNES",
+  {
+    collegeName: "St. Agnes College(Autonomous), Manglore",
   },
-      {
-    collegeName: "Srinivas Mukka",
+  {
+    collegeName: "Srinivas Mukka College",
   },
-      {
-    collegeName: "Aloysius",
+  {
+    collegeName: "St. Aloysius(Deemed to be Universtity), Manglore",
   },
-      {
-    collegeName: "Alva's",
+  {
+    collegeName: "Alva's College, Manglore",
   },
-      {
-    collegeName: "Srinivas Management",
+  {
+    collegeName: "Srinivas Management, Manglore",
   },
-      {
-    collegeName: "Father Mullar",
+  {
+    collegeName: "Father Muller Medical College, Manglore",
   },
-
 ];
 
 module.exports = colleges;
