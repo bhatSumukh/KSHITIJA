@@ -1,5 +1,5 @@
 const event = {
-  name: "BHAVATARANGA",
+  name: "BHAVAGEETHE",
   type: "SINGING",
 
   description:

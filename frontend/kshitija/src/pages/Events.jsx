@@ -82,7 +82,7 @@ const events = [
   {
     id: 7,
     name: "JANVANI",
-    slug: "janavani",
+    slug: "janvani",
     category: "DEBATE",
     description:
       "Jan Vāṇī means “the voice of the people.” It represents expressing opinions, perspectives, and ideas through discussion and debate.",

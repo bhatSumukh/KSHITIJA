@@ -1,5 +1,5 @@
 const event = {
-  name: "JANAVANI",
+  name: "JANVANI",
   type: "DEBATE",
 
   description:
