@@ -206,6 +206,10 @@ function Guidelines() {
               personal belongings and equipment.
             </GuidelineItem>
 
+            <GuidelineItem>
+             Avoid Sensitive Topic,  Avoid discussions, content, or performances related to caste, religion, or political matters, and maintain respect and inclusivity at all times.
+            </GuidelineItem>
+
             
 
           </GuidelineSection>
