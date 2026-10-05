@@ -1,9 +1,11 @@
+import danceBan from "../assets/dance-bg.png";
+
 const event = {
   name: "BHAVAGEETHE",
   type: "SINGING",
 
   description:
-    "Let your voice bridge generations with melodies that connect the past, present, and future.",
+    "Bhavageethe – A Kannada Bhavageethe singing competition showcasing musical talent and creativity. A platform for participants to express themselves through music.",
 
   guidelines: [
     "4–6 members per team, including instrumentalists.",
@@ -22,23 +24,23 @@ const event = {
 
     "Judgement based on voice clarity, coordination, rhythm, musicality and presentation.",
 
-    "Judges’ decision shall be final and binding."
+    "Judges’ decision shall be final and binding.",
   ],
 
   timing: {
-    // reporting: "9:00 AM",
     event: "11:00AM",
-    // duration: "10 – 15 minutes",
   },
 
   studentCoordinator1: {
     name: "Khushi",
     phone: "+91 6362856741",
   },
+
   studentCoordinator2: {
     name: "Apoorva",
     phone: "+91 7892394541",
   },
+
   staffCoordinator: {
     name: "Staff Coordinator Name",
     phone: "+91 ",
@@ -48,37 +50,60 @@ const event = {
 function Singing() {
   return (
     <section className="min-h-screen bg-[#020b14] px-6 py-24 text-white sm:px-10 lg:px-20">
-      {/* HEADER */}
       <div className="mx-auto max-w-6xl">
-        <div className="mb-5 flex items-center gap-4">
-          <span className="text-sm tracking-[0.25em] text-[#e7b65a]">
-            EVENT DETAILS
-          </span>
 
-          <span className="h-px w-16 bg-[#e7b65a]/60" />
+        {/* ================= HERO / EVENT BANNER ================= */}
+        <div className="relative overflow-hidden rounded-2xl border border-white/10">
+
+          {/* Banner Image */}
+          <img
+            src={danceBan}
+            alt=""
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+
+          {/* Subtle Overlay */}
+          <div className="absolute inset-0 bg-[#020b14]/20" />
+
+          {/* Hero Content */}
+          <div className="relative z-10 min-h-[420px] px-8 py-12 sm:px-12 lg:px-16">
+
+            {/* Small Heading */}
+            <div className="mb-5 flex items-center gap-4">
+              <span className="text-sm tracking-[0.25em] text-[#e7b65a]">
+                EVENT DETAILS
+              </span>
+
+              <span className="h-px w-16 bg-[#e7b65a]/60" />
+            </div>
+
+            {/* Event Name */}
+            <h1 className="font-serif text-3xl text-[#f2c873] sm:text-6xl lg:text-7xl">
+              {event.name}
+            </h1>
+
+            {/* Event Type */}
+            <p className="mt-3 text-sm tracking-[0.35em] text-white/50">
+              {event.type}
+            </p>
+          </div>
         </div>
 
-        <h1 className="font-serif text-3xl text-[#f2c873] sm:text-6xl lg:text-7xl">
-          {event.name}
-        </h1>
-
-        <p className="mt-3 text-sm tracking-[0.35em] text-white/50">
-          {event.type}
-        </p>
-
-        <div className="mt-8 h-px w-full bg-white/10" />
-
-        {/* DESCRIPTION */}
+        {/* ================= DESCRIPTION ================= */}
         <p className="mt-8 max-w-3xl text-base leading-8 text-white/65 sm:text-lg">
           {event.description}
         </p>
 
-        {/* CONTENT GRID */}
+        {/* ================= CONTENT GRID ================= */}
         <div className="mt-16 grid gap-10 lg:grid-cols-2">
-          {/* GUIDELINES */}
+
+          {/* ================= GUIDELINES ================= */}
           <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-7 sm:p-10">
+
             <div className="mb-8 flex items-center gap-4">
-              <h2 className="font-serif text-3xl text-white">Guidelines</h2>
+              <h2 className="font-serif text-3xl text-white">
+                Guidelines
+              </h2>
             </div>
 
             <div className="space-y-5">
@@ -90,23 +115,27 @@ function Singing() {
                   <span className="text-sm text-[#e7b65a]">
                     {String(index + 1).padStart(2, "0")}
                   </span>
-                  <p className="text-sm leading-7 text-white/65">{guideline}</p>
+
+                  <p className="text-sm leading-7 text-white/65">
+                    {guideline}
+                  </p>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* TIMING */}
+          {/* ================= COORDINATOR / TIMING ================= */}
           <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-7 sm:p-10">
-            <div className="">
-              <div className="mb-8 flex items-center gap-4">
-                {/* <span className="text-sm text-[#e7b65a]">03</span> */}
 
+            {/* Student Coordinator */}
+            <div>
+              <div className="mb-8 flex items-center gap-4">
                 <h2 className="font-serif text-3xl text-white">
                   Student Coordinator
                 </h2>
               </div>
 
+              {/* Coordinator 1 */}
               <p className="text-xl text-white">
                 {event.studentCoordinator1.name}
               </p>
@@ -115,6 +144,7 @@ function Singing() {
                 {event.studentCoordinator1.phone}
               </p>
 
+              {/* Coordinator 2 */}
               <p className="text-xl text-white">
                 {event.studentCoordinator2.name}
               </p>
@@ -124,8 +154,11 @@ function Singing() {
               </p>
             </div>
 
-            <div>
-              <p className="text-xl text-white">Event Time</p>
+            {/* Event Time */}
+            <div className="mt-8">
+              <p className="text-xl text-white">
+                Event Time
+              </p>
 
               <p className="mt-2 text-lg text-[#f2c873]">
                 {event.timing.event}

@@ -3,7 +3,7 @@ const event = {
   type: "FACE PAINTING",
 
   description:
-    "Turn faces into canvases and create imaginative art inspired by your creativity.",
+    "Antariksha means “space” or “cosmos.” It represents the vastness, mystery, and beauty of the universe.",
 
   guidelines: [
     "The topic/theme for face painting will be given on the spot by the organisers.",

@@ -3,7 +3,7 @@ const event = {
   type: "DANCE",
 
   description:
-    "Express the unity of tradition and modernity through rhythm, movement, and choreography.",
+    "Nari Parivartanam means “the transformation of women.” It represents the strength, evolution, and empowerment of women through change and expression.",
 
   guidelines: [
     "Each team should consist of minimum of 7 members and maximum of 10 members",

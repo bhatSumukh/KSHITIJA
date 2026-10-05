@@ -3,7 +3,7 @@ const event = {
   type: "REEL MAKING",
 
   description:
-    "Capture the spirit of Yugmam through a short, creative, and visually engaging reel.",
+    "Kṣhaṇa Chitra means “a picture of a moment.” It represents capturing a moment, idea, or story creatively through visual media",
 
   guidelines: [
     "Only 1 participant",

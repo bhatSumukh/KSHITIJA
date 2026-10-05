@@ -3,7 +3,7 @@ const event = {
   type: "DEBATE",
 
   description:
-    "Challenge ideas, defend your perspective, and engage in a battle of words and reasoning.",
+    "Janvani means “the voice of the people.” It represents expressing opinions, perspectives, and ideas through discussion and debate.",
 
   guidelines: [
     "2 participants — 1 Lawyer & 1 Witness.",

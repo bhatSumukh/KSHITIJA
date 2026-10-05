@@ -3,7 +3,7 @@ const event = {
   type: "ESCAPE ROOM",
 
   description:
-    "Solve clues, crack puzzles, and work together to escape before time runs out.",
+    "Rahasya Dvāram means “the mysterious door.” It represents a journey of mystery, clues, challenges, and discovery.",
 
   guidelines: [
     "Each team must have 2 participants.",

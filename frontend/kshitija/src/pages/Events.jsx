@@ -41,7 +41,7 @@ const events = [
     slug: "bhavageethe",
     category: "SINGING",
     description:
-      "Let your voice bridge generations with melodies that connect the past, present, and future.",
+      "Bhavageethe – A Kannada Bhavageethe singing competition showcasing musical talent and creativity. A platform for participants to express themselves through music.",
     teamSize: "4-6 Members",
     image: singing,
   },

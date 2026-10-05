@@ -92,6 +92,67 @@ const colleges = [
   {
     collegeName: "Father Muller Medical College, Manglore",
   },
+    {
+    collegeName: "SMS Degree College, Bramavara",
+  },
+    {
+    collegeName: "Sri Sharada College Basrur ",
+  },
+  {
+    collegeName: "Crossland College, Bramavara"
+  },
+  {
+    collegeName: "Milagres College, Manglore",
+  },
+  {
+    collegeName: "Moodlakatte Institute of Technology (MIT Kundapura)"
+  },
+  {
+    collegeName: "Vaikunta Baliga College of Law, Udupi"
+  },
+  {
+    collegeName: "Poornaprajna PU College, Udupi"
+  },
+  {
+    collegeName: "Vidyodaya PU College"
+  },
+  {
+    collegeName: "Shamili Independeent PU College, kediyoor"
+  },
+  {
+    collegeName: "Trisha PU College, Kalyanpura"
+  },
+  {
+    collegeName: "Mahatma Gandhi Memorial PU College"
+  },
+  {
+    collegeName: "Sri Vishnumoorthy Hayavadanaswamy PU College, Innanje"
+  },
+  {
+    collegeName: "Sri Vishnumoorthy Hayavadanaswamy PU College, Katpadi"
+  },
+    {
+    collegeName: "Sri Vishnumoorthy Hayavadanaswamy PU College, Udupi"
+  },
+  {
+    collegeName: "Janasudha PU College, Karkala"
+  },
+  {
+    collegeName: "Janasudha PU College, Udupi"
+  },
+  {
+    collegeName: "Anandathirtha PU College in Pajaka, Kunjarugiri"
+  },
+  {
+    collegeName: "SILAS PU College, Udupi"
+  },
+  {
+    collegeName: "St Cecily's Composite PU College,Udupi"
+  },
+  {
+    collegeName: "SMS PU College, Bramavara"
+  }
 ];
+
 
 module.exports = colleges;

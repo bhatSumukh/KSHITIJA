@@ -3,7 +3,7 @@ const event = {
   type: "BEST OUT OF WASTE",
 
   description:
-    "Transform discarded materials into creative, meaningful, and visually striking art.",
+    "Best out of waste Prior preparation of any items is not allowed if it is found then the team will be disqualified",
 
   guidelines: [
     "Time limit: 1 hour",
