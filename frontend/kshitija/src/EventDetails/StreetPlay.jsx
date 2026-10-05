@@ -1,4 +1,4 @@
-import streetPlay from "../assets/streetPlay-bg.png"
+import streetPlay from "../assets/streetPlay-bg.png";
 const event = {
   name: "YUGANTARA",
   type: "STREET PLAY",
@@ -26,6 +26,10 @@ const event = {
     // reporting: "9:00 AM",
     event: "11:00AM",
     // duration: "10 – 15 minutes",
+  },
+
+  fees: {
+    Reg: "100Rs",
   },
 
   studentCoordinator1: {
@@ -146,6 +150,10 @@ function StreetPlay() {
               <p className="mt-2 text-lg text-[#f2c873]">
                 {event.timing.event}
               </p>
+
+              <p className="text-xl text-white">Registration Fees</p>
+
+              <p className="mt-2 text-lg text-[#f2c873]">{event.fees.Reg}</p>
             </div>
           </div>
         </div>

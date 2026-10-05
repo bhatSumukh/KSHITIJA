@@ -1,4 +1,4 @@
-import danceBg from "../assets/dance-bg.png"
+import danceBg from "../assets/dance-bg.png";
 const event = {
   name: "NARIPARIVARTANAM",
   type: "DANCE",
@@ -21,6 +21,10 @@ const event = {
 
     "The dance should be decent and appropriate.",
   ],
+
+  fees: {
+    Reg: "100Rs",
+  },
 
   timing: {
     // reporting: "9:00 AM",
@@ -143,6 +147,10 @@ function Dance() {
               <p className="mt-2 text-lg text-[#f2c873]">
                 {event.timing.event}
               </p>
+
+              <p className="text-xl text-white">Registration Fees</p>
+
+              <p className="mt-2 text-lg text-[#f2c873]">{event.fees.Reg}</p>
             </div>
           </div>
         </div>

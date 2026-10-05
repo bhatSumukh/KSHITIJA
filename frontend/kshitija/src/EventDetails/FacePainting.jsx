@@ -1,4 +1,4 @@
-import facebg from '../assets/facep-bg.png'
+import facebg from "../assets/facep-bg.png";
 const event = {
   name: "ANTARIKSHA",
   type: "FACE PAINTING",
@@ -28,6 +28,10 @@ const event = {
     // reporting: "9:00 AM",
     event: "11:00AM",
     // duration: "10 – 15 minutes",
+  },
+
+  fees: {
+    Reg: "100Rs",
   },
 
   studentCoordinator1: {
@@ -146,6 +150,10 @@ function FacePainting() {
               <p className="mt-2 text-lg text-[#f2c873]">
                 {event.timing.event}
               </p>
+
+              <p className="text-xl text-white">Registration Fees</p>
+
+              <p className="mt-2 text-lg text-[#f2c873]">{event.fees.Reg}</p>
             </div>
           </div>
         </div>

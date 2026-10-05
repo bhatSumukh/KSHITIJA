@@ -31,6 +31,10 @@ const event = {
     event: "11:00AM",
   },
 
+  fees: {
+    Reg: "100Rs",
+  },
+
   studentCoordinator1: {
     name: "Khushi",
     phone: "+91 6362856741",
@@ -152,6 +156,10 @@ function Singing() {
               <p className="mt-2 text-lg text-[#f2c873]">
                 {event.timing.event}
               </p>
+
+              <p className="text-xl text-white">Registration Fees</p>
+
+              <p className="mt-2 text-lg text-[#f2c873]">{event.fees.Reg}</p>
             </div>
           </div>
         </div>

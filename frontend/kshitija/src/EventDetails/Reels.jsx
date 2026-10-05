@@ -1,4 +1,4 @@
-import reelbg from "../assets/reel-bg.png"
+import reelbg from "../assets/reel-bg.png";
 const event = {
   name: "KSHANACHITRA",
   type: "REEL MAKING",
@@ -22,6 +22,10 @@ const event = {
     // reporting: "9:00 AM",
     event: "9:30AM",
     // duration: "10 – 15 minutes",
+  },
+
+  fees: {
+    Reg: "100Rs",
   },
 
   studentCoordinator1: {
@@ -140,6 +144,10 @@ function Reels() {
               <p className="mt-2 text-lg text-[#f2c873]">
                 {event.timing.event}
               </p>
+
+              <p className="text-xl text-white">Registration Fees</p>
+
+              <p className="mt-2 text-lg text-[#f2c873]">{event.fees.Reg}</p>
             </div>
           </div>
         </div>

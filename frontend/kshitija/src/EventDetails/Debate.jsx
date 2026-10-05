@@ -1,4 +1,4 @@
-import debateBg from "../assets/debate-bg.png"
+import debateBg from "../assets/debate-bg.png";
 const event = {
   name: "JANVANI",
   type: "DEBATE",
@@ -30,6 +30,10 @@ const event = {
     // reporting: "9:00 AM",
     event: "10.30AM",
     // duration: "10 – 15 minutes",
+  },
+
+  fees: {
+    Reg: "100Rs",
   },
 
   studentCoordinator1: {
@@ -148,6 +152,9 @@ function Debate() {
               <p className="mt-2 text-lg text-[#f2c873]">
                 {event.timing.event}
               </p>
+              <p className="text-xl text-white">Registration Fees</p>
+
+              <p className="mt-2 text-lg text-[#f2c873]">{event.fees.Reg}</p>
             </div>
           </div>
         </div>

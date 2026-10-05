@@ -1,4 +1,4 @@
-import EscapeBg from "../assets/escape.png"
+import EscapeBg from "../assets/escape.png";
 const event = {
   name: "RAHASYADVĀRAM",
   type: "ESCAPE ROOM",
@@ -28,6 +28,10 @@ const event = {
     // reporting: "9:00 AM",
     event: "10:30AM",
     // duration: "10 – 15 minutes",
+  },
+
+  fees: {
+    Reg: "100Rs",
   },
 
   studentCoordinator1: {
@@ -93,7 +97,6 @@ function EscapeRoom() {
           {/* GUIDELINES */}
           <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-7 sm:p-10">
             <div className="mb-8 flex items-center gap-4">
-
               <h2 className="font-serif text-3xl text-white">Guidelines</h2>
             </div>
 
@@ -147,6 +150,10 @@ function EscapeRoom() {
               <p className="mt-2 text-lg text-[#f2c873]">
                 {event.timing.event}
               </p>
+
+              <p className="text-xl text-white">Registration Fees</p>
+
+              <p className="mt-2 text-lg text-[#f2c873]">{event.fees.Reg}</p>
             </div>
           </div>
         </div>
