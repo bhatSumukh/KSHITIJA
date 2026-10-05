@@ -85,6 +85,8 @@ function Guidelines() {
           >
             <GuidelineItem>The fest is open to only NSS students</GuidelineItem>
 
+            <GuidelineItem>Registration fees will be 100Rs Per event</GuidelineItem>
+
             <GuidelineItem>
               Only one team per college is allowed to participate in each event.
               A team should consist of 25 students per college.
