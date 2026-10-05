@@ -1,3 +1,4 @@
+import faceP from "../assets/best.png"
 const event = {
   name: "RUPANTARA",
   type: "BEST OUT OF WASTE",
@@ -36,28 +37,43 @@ function BestWaste() {
     <section className="min-h-screen bg-[#020b14] px-6 py-24 text-white sm:px-10 lg:px-20">
       {/* HEADER */}
       <div className="mx-auto max-w-6xl">
-        <div className="mb-5 flex items-center gap-4">
-          <span className="text-sm tracking-[0.25em] text-[#e7b65a]">
-            EVENT DETAILS
-          </span>
+        <div className="relative overflow-hidden rounded-2xl border border-white/10">
+          {/* Banner Image */}
+          <img
+            src={faceP}
+            alt=""
+            className="absolute inset-0 h-full w-full object-cover"
+          />
 
-          <span className="h-px w-16 bg-[#e7b65a]/60" />
+          {/* Subtle Overlay */}
+          <div className="absolute inset-0 bg-[#020b14]/20" />
+
+          {/* Hero Content */}
+          <div className="relative z-10 min-h-[420px] px-8 py-12 sm:px-12 lg:px-16">
+            {/* Small Heading */}
+            <div className="mb-5 flex items-center gap-4">
+              <span className="text-sm tracking-[0.25em] text-[#e7b65a]">
+                EVENT DETAILS
+              </span>
+
+              <span className="h-px w-16 bg-[#e7b65a]/60" />
+            </div>
+
+            {/* Event Name */}
+            <h1 className="font-serif text-3xl text-[#f2c873] sm:text-6xl lg:text-7xl">
+              {event.name}
+            </h1>
+
+            {/* Event Type */}
+            <p className="mt-3 text-sm tracking-[0.35em] text-white/50">
+              {event.type}
+            </p>
+
+            <p className="mt-8 max-w-3xl text-base leading-8 text-white/65 sm:text-lg">
+              {event.description}
+            </p>
+          </div>
         </div>
-
-        <h1 className="font-serif text-3xl text-[#f2c873] sm:text-6xl lg:text-7xl">
-          {event.name}
-        </h1>
-
-        <p className="mt-3 text-sm tracking-[0.35em] text-white/50">
-          {event.type}
-        </p>
-
-        <div className="mt-8 h-px w-full bg-white/10" />
-
-        {/* DESCRIPTION */}
-        <p className="mt-8 max-w-3xl text-base leading-8 text-white/65 sm:text-lg">
-          {event.description}
-        </p>
 
         {/* CONTENT GRID */}
         <div className="mt-16 grid gap-10 lg:grid-cols-2">
