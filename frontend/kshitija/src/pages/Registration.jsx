@@ -7,6 +7,8 @@ function Registration() {
   const [colleges, setColleges] = useState([]);
   const [events, setEvents] = useState([]);
 
+    const [collegeSearch, setCollegeSearch] = useState("");
+
   const [form, setForm] = useState({
     college: "",
     facultyHeadName: "",
@@ -541,7 +543,7 @@ function Registration() {
 
         <div className="relative mx-auto max-w-6xl text-center">
           <p className="text-[10px] uppercase tracking-[0.5em] text-[#e7b65a]">
-            KSHITIJA 
+            KSHITIJA
           </p>
 
           <h1 className="mt-6 font-serif text-5xl text-[#f2c873] sm:text-7xl">
@@ -586,29 +588,43 @@ function Registration() {
                     College
                   </label>
 
-                  <select
-                    name="college"
-                    value={form.college}
-                    onChange={handleChange}
-                    disabled={loadingColleges}
-                    className="mt-2 w-full appearance-none border border-white/10 bg-[#020b14] px-4 py-4 text-sm text-white outline-none transition focus:border-[#e7b65a]/50"
-                  >
-                    <option value="">
-                      {loadingColleges
-                        ? "Loading colleges..."
-                        : "Select your college"}
-                    </option>
+                  <div className="relative mt-2">
+                    <input
+                      type="text"
+                      list="college-list"
+                      value={collegeSearch}
+                      onChange={(e) => {
+                        const value = e.target.value;
 
-                    {colleges.map((college) => (
-                      <option
-                        key={college._id}
-                        value={college._id}
-                        className="bg-[#071522]"
-                      >
-                        {college.collegeName}
-                      </option>
-                    ))}
-                  </select>
+                        setCollegeSearch(value);
+
+                        // Find the college selected from the dropdown
+                        const selectedCollege = colleges.find(
+                          (college) =>
+                            college.collegeName.toLowerCase() ===
+                            value.toLowerCase(),
+                        );
+
+                        setForm((previous) => ({
+                          ...previous,
+                          college: selectedCollege ? selectedCollege._id : "",
+                        }));
+                      }}
+                      disabled={loadingColleges}
+                      placeholder={
+                        loadingColleges
+                          ? "Loading colleges..."
+                          : "Search or select your college"
+                      }
+                      className="w-full border border-white/10 bg-[#020b14] px-4 py-4 text-sm text-white outline-none transition placeholder:text-white/20 focus:border-[#e7b65a]/50"
+                    />
+
+                    <datalist id="college-list">
+                      {colleges.map((college) => (
+                        <option key={college._id} value={college.collegeName} />
+                      ))}
+                    </datalist>
+                  </div>
                 </div>
 
                 {/* Faculty Name */}

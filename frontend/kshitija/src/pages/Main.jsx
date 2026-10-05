@@ -4,6 +4,7 @@ import Events from "./Events";
 import Registration from "./Registration";
 import Guidelines from "./Guidelines";
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 function Main() {
   return (
@@ -30,6 +31,10 @@ function Main() {
 
       <section id="contact">
         <Contact />
+      </section>
+
+            <section id="Footer">
+        <Footer />
       </section>
     </main>
   );
