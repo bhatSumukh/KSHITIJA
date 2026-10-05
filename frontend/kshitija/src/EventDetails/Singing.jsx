@@ -51,10 +51,8 @@ function Singing() {
   return (
     <section className="min-h-screen bg-[#020b14] px-6 py-24 text-white sm:px-10 lg:px-20">
       <div className="mx-auto max-w-6xl">
-
         {/* ================= HERO / EVENT BANNER ================= */}
         <div className="relative overflow-hidden rounded-2xl border border-white/10">
-
           {/* Banner Image */}
           <img
             src={danceBan}
@@ -67,7 +65,6 @@ function Singing() {
 
           {/* Hero Content */}
           <div className="relative z-10 min-h-[420px] px-8 py-12 sm:px-12 lg:px-16">
-
             {/* Small Heading */}
             <div className="mb-5 flex items-center gap-4">
               <span className="text-sm tracking-[0.25em] text-[#e7b65a]">
@@ -86,24 +83,21 @@ function Singing() {
             <p className="mt-3 text-sm tracking-[0.35em] text-white/50">
               {event.type}
             </p>
+
+            <p className="mt-8 max-w-3xl text-base leading-8 text-white/65 sm:text-lg">
+              {event.description}
+            </p>
           </div>
         </div>
 
         {/* ================= DESCRIPTION ================= */}
-        <p className="mt-8 max-w-3xl text-base leading-8 text-white/65 sm:text-lg">
-          {event.description}
-        </p>
 
         {/* ================= CONTENT GRID ================= */}
         <div className="mt-16 grid gap-10 lg:grid-cols-2">
-
           {/* ================= GUIDELINES ================= */}
           <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-7 sm:p-10">
-
             <div className="mb-8 flex items-center gap-4">
-              <h2 className="font-serif text-3xl text-white">
-                Guidelines
-              </h2>
+              <h2 className="font-serif text-3xl text-white">Guidelines</h2>
             </div>
 
             <div className="space-y-5">
@@ -116,9 +110,7 @@ function Singing() {
                     {String(index + 1).padStart(2, "0")}
                   </span>
 
-                  <p className="text-sm leading-7 text-white/65">
-                    {guideline}
-                  </p>
+                  <p className="text-sm leading-7 text-white/65">{guideline}</p>
                 </div>
               ))}
             </div>
@@ -126,7 +118,6 @@ function Singing() {
 
           {/* ================= COORDINATOR / TIMING ================= */}
           <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-7 sm:p-10">
-
             {/* Student Coordinator */}
             <div>
               <div className="mb-8 flex items-center gap-4">
@@ -156,9 +147,7 @@ function Singing() {
 
             {/* Event Time */}
             <div className="mt-8">
-              <p className="text-xl text-white">
-                Event Time
-              </p>
+              <p className="text-xl text-white">Event Time</p>
 
               <p className="mt-2 text-lg text-[#f2c873]">
                 {event.timing.event}

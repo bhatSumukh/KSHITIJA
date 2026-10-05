@@ -1,3 +1,4 @@
+import streetPlay from "./assets/streetPlay-bg.png"
 const event = {
   name: "YUGANTARA",
   type: "STREET PLAY",
