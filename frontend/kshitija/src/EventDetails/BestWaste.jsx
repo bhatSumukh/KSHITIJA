@@ -14,6 +14,10 @@ const event = {
     "Last 2 minutes for explanation.",
   ],
 
+  fees: {
+    Reg: "100Rs"
+  },
+
   timing: {
     event: "1:45pm",
   },
@@ -131,6 +135,12 @@ function BestWaste() {
 
               <p className="mt-2 text-lg text-[#f2c873]">
                 {event.timing.event}
+              </p>
+
+               <p className="text-xl text-white">Registration Fees</p>
+
+              <p className="mt-2 text-lg text-[#f2c873]">
+                {event.fees.Reg}
               </p>
             </div>
           </div>
