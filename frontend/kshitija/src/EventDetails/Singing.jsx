@@ -1,4 +1,4 @@
-import danceBan from "../assets/dance-bg.png";
+import danceBan from "../assets/singing-bg.png";
 
 const event = {
   name: "BHAVAGEETHE",
