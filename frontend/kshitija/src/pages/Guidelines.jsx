@@ -83,7 +83,7 @@ function Guidelines() {
             // number="01"
             title="General Guidelines"
           >
-            <GuidelineItem>The last date for registration is 14th October</GuidelineItem>
+            <GuidelineItem>Registration for DEBATE & ESCAPEROOM should be completed before 14/10/2026</GuidelineItem>
 
             <GuidelineItem>The fest is open to only NSS students</GuidelineItem>
 
