@@ -37,8 +37,8 @@ const events = [
 
   {
     id: 3,
-    name: "BHAVAGEETHE",
-    slug: "bhavageethe",
+    name: "BHAVATHARANGA",
+    slug: "bhavatharanga",
     category: "SINGING",
     description:
       "Bhavageethe – A Kannada Bhavageethe singing competition showcasing musical talent and creativity. A platform for participants to express themselves through music.",

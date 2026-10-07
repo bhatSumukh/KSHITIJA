@@ -1,7 +1,7 @@
 import danceBan from "../assets/singing-bg.png";
 
 const event = {
-  name: "BHAVAGEETHE",
+  name: "BHAVATHARANGA",
   type: "SINGING",
 
   description:
