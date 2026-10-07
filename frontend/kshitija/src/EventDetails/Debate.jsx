@@ -9,9 +9,11 @@ const event = {
   guidelines: [
     "2 participants — 1 Lawyer & 1 Witness.",
 
-    " Limited preparation time will be provided.",
+    "The language used is either KANNADA or ENGLISH",
 
-    " Maximum 5 minutes — Lawyer: 3 minutes | Witness: 2 minutes.",
+    "Limited preparation time will be provided.",
+
+    "Maximum 5min to present your case i.e 3min lawyer and 2 min witness",
 
     "Must respond according to the given case and character.",
 
