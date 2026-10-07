@@ -9,6 +9,8 @@ const event = {
   guidelines: [
     "Each team should consist of minimum of 7 members and maximum of 10 members",
 
+    "Each team would get 8 + 2 minutes",
+
     "Use of fire, water or any hazardous materials is strictly prohibited",
 
     "Any form of vulgarity, explicit content or gestures will lead to disqualification",

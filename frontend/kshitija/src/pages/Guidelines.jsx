@@ -83,6 +83,8 @@ function Guidelines() {
             // number="01"
             title="General Guidelines"
           >
+            <GuidelineItem>The last date for registration is 14th October</GuidelineItem>
+
             <GuidelineItem>The fest is open to only NSS students</GuidelineItem>
 
             <GuidelineItem>Registration fees will be 100Rs Per event</GuidelineItem>
