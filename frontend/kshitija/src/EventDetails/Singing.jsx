@@ -37,7 +37,7 @@ const event = {
 
   studentCoordinator1: {
     name: "Khushi",
-    phone: "+91 6362856741",
+    phone: "+91 6362856747",
   },
 
   studentCoordinator2: {
