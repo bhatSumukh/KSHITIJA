@@ -9,19 +9,25 @@ const event = {
   guidelines: [
     "Each team should consist of minimum of 7 members and maximum of 10 members",
 
-    "Each team would get 8 + 2 minutes",
+    "2.	The performance time is 8 minutes, followed by 2 minutes for preparation",
+
+    "3.	No extra time will be provided",
+
+    "4.	The performance can be in any language",
 
     "Use of fire, water or any hazardous materials is strictly prohibited",
 
-    "Any form of vulgarity, explicit content or gestures will lead to disqualification",
+    "5.	The performance must strictly follow the theme “Evolution and transformation of women.” ",
 
-    "Music should be submitted a day prior",
+    "Political references are not permitted",
 
-    "Any use of language is permitted, MC should be done in kannada",
+    "7.	Props, costumes and makeup are permitted, but costumes and presentation must be decent and appropriate",
 
-    "Vulgarity is not allowed.",
+    "Mobile phones are not allowed during the performance. ",
 
-    "The dance should be decent and appropriate.",
+    "The performance must maintain decency and appropriate language. Vulgarity or offensive content is not permitted",
+
+    "10.	The performance should demonstrate effective teamwork, audience interaction and stage/space utilisation ",
   ],
 
   fees: {
