@@ -9,25 +9,25 @@ const event = {
   guidelines: [
     "Each team should consist of minimum of 7 members and maximum of 10 members",
 
-    "2.	The performance time is 8 minutes, followed by 2 minutes for preparation",
+    "The performance time is 8 minutes, followed by 2 minutes for preparation",
 
-    "3.	No extra time will be provided",
+    "No extra time will be provided",
 
-    "4.	The performance can be in any language",
+    "The performance can be in any language",
 
     "Use of fire, water or any hazardous materials is strictly prohibited",
 
-    "5.	The performance must strictly follow the theme “Evolution and transformation of women.” ",
+    "The performance must strictly follow the theme “Evolution and transformation of women.” ",
 
     "Political references are not permitted",
 
-    "7.	Props, costumes and makeup are permitted, but costumes and presentation must be decent and appropriate",
+    "Props, costumes and makeup are permitted, but costumes and presentation must be decent and appropriate",
 
-    "Mobile phones are not allowed during the performance. ",
+    "Mobile phones are not allowed during the performance",
 
     "The performance must maintain decency and appropriate language. Vulgarity or offensive content is not permitted",
 
-    "10.	The performance should demonstrate effective teamwork, audience interaction and stage/space utilisation ",
+    "The performance should demonstrate effective teamwork, audience interaction and stage/space utilisation ",
   ],
 
   fees: {
