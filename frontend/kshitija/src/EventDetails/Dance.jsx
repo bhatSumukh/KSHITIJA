@@ -13,8 +13,6 @@ const event = {
 
     "Use of fire, water or any hazardous materials is strictly prohibited",
 
-    "Use of fire, water or any hazardous materials is strictly prohibited",
-
     "Music should be submitted a day prior",
 
     "Any use of language is permitted, MC should be done in Kannada",
