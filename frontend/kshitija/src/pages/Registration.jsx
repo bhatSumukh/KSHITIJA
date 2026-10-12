@@ -487,7 +487,7 @@ function Registration() {
             </div>
 
             <p className="mt-8 text-[10px] uppercase tracking-[0.45em] text-[#e7b65a]">
-              KSHITIJA • YUGMAM
+              KSHITIJA
             </p>
 
             <h1 className="mt-5 font-serif text-5xl text-[#f2c873] sm:text-6xl">
@@ -504,8 +504,6 @@ function Registration() {
 
             <p className="mx-auto mt-3 max-w-lg text-sm leading-7 text-white/50">
               We look forward to welcoming you to{" "}
-              <span className="text-[#e7b65a]">Yugmam</span> — Where Two Worlds
-              Unite.
             </p>
 
             <div className="mx-auto my-8 h-px w-24 bg-[#e7b65a]/30" />
